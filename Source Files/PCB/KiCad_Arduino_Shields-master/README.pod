@@ -1,0 +1,25 @@
+=encoding utf8
+
+=head1 NAME
+
+Arduino Shields - KiCad parts of different Arduino shields
+
+=head1 INSTALL
+
+    git clone git@github.com:jozef/KiCad_Arduino_Shields.git Arduino_Shields
+
+In Eeschema:
+
+    1. Menu: Preferences → Manage Symbol Libraries
+    2. [Browse Libraries] → …/Arduino_Shields/Arduino_Shields.lib
+    3. set description: Arduino Shields (the last in the list)
+    4. [OK]
+
+In Pcbnew:
+
+    1. Menu: Preferences → Manage Footprint Libraries
+    2. [Browse Libraries] → …/Arduino_Shields
+    3. set description: Arduino Shields (the last in the list)
+    4. [OK]
+
+=cut

@@ -1,0 +1,21 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP Arduino_Pro_Mini_12_12_5
+D Arduino Pro Mini with 12/12/5 pins
+K Arduino Pro Mini
+F https://www.aliexpress.com/item/New-Pro-Mini-atmega328-Board-5V-16M-Replace-ATmega128-For-Arduino-Compatible-Nano/2031903258.html
+$ENDCMP
+#
+$CMP Arduino_Pro_Mini_12_12_5_1
+D Arduino Pro Mini with 12/12/5/1 pins
+K Arduino Pro Mini
+F https://www.aliexpress.com/item/New-Pro-Mini-atmega328-Board-5V-16M-Replace-ATmega128-For-Arduino-Compatible-Nano/2031903258.html
+$ENDCMP
+#
+$CMP Arduino_Uno_Black
+D Arduino Uno Black
+K Arduino Uno Black
+F https://store.arduino.cc/arduino-uno-rev3
+$ENDCMP
+#
+#End Doc Library
