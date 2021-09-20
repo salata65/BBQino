@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Memory_EEPROM:24LC512 U99
+L BBQino-rescue:24LC512-Memory_EEPROM U99
 U 1 1 6139200A
 P 2800 2100
 F 0 "U99" H 2450 2550 50  0000 C CNN
@@ -25,7 +25,7 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21754M.pdf" H 2800 2100 50 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x03_Male J_A0
+L BBQino-rescue:Conn_01x03_Male-Connector J_A0
 U 1 1 61396B54
 P 1500 2600
 F 0 "J_A0" H 1608 2789 50  0000 C CNN
@@ -38,7 +38,7 @@ $EndComp
 Wire Wire Line
 	2800 1350 2800 1500
 $Comp
-L Connector:Conn_01x03_Male J_A1
+L BBQino-rescue:Conn_01x03_Male-Connector J_A1
 U 1 1 613A016A
 P 1500 3050
 F 0 "J_A1" H 1608 3239 50  0000 C CNN
@@ -49,7 +49,7 @@ F 3 "~" H 1500 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x03_Male J_A2
+L BBQino-rescue:Conn_01x03_Male-Connector J_A2
 U 1 1 613A06AE
 P 1500 3550
 F 0 "J_A2" H 1608 3739 50  0000 C CNN
@@ -118,7 +118,7 @@ Wire Wire Line
 Text Notes 750  3850 0    100  ~ 0
 EEPROM ADDRESS
 $Comp
-L Device:C C?
+L BBQino-rescue:C-Device C?
 U 1 1 613A7946
 P 4100 1700
 F 0 "C?" H 4215 1746 50  0000 L CNN
@@ -133,7 +133,7 @@ Wire Wire Line
 Wire Wire Line
 	4100 1500 4100 1550
 $Comp
-L power:GNDD #PWR?
+L BBQino-rescue:GNDD-power #PWR?
 U 1 1 613AC7D9
 P 4100 1850
 F 0 "#PWR?" H 4100 1600 50  0001 C CNN
@@ -144,7 +144,7 @@ F 3 "" H 4100 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDD #PWR?
+L BBQino-rescue:GNDD-power #PWR?
 U 1 1 613B1156
 P 2800 2900
 F 0 "#PWR?" H 2800 2650 50  0001 C CNN
@@ -155,7 +155,7 @@ F 3 "" H 2800 2900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5VD #PWR?
+L BBQino-rescue:+5VD-power #PWR?
 U 1 1 613B25A5
 P 2800 1350
 F 0 "#PWR?" H 2800 1200 50  0001 C CNN
@@ -166,7 +166,7 @@ F 3 "" H 2800 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Jumper:Jumper_3_Bridged12 EN_W
+L BBQino-rescue:Jumper_3_Bridged12-Jumper EN_W
 U 1 1 613B5C58
 P 3650 2500
 F 0 "EN_W" V 3650 2567 50  0000 L CNN
@@ -181,7 +181,7 @@ Wire Wire Line
 Wire Wire Line
 	3500 2200 3500 2500
 $Comp
-L power:+5VD #PWR?
+L BBQino-rescue:+5VD-power #PWR?
 U 1 1 613B886B
 P 3650 2250
 F 0 "#PWR?" H 3650 2100 50  0001 C CNN
@@ -192,7 +192,7 @@ F 3 "" H 3650 2250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDD #PWR?
+L BBQino-rescue:GNDD-power #PWR?
 U 1 1 613BA173
 P 3650 2750
 F 0 "#PWR?" H 3650 2500 50  0001 C CNN

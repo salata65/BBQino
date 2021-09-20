@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_Module:Arduino_UNO_R3 A?
+L BBQino-rescue:Arduino_UNO_R3-MCU_Module A?
 U 1 1 613FC931
 P 2900 3200
 F 0 "A?" H 2900 4381 50  0000 C CNN
@@ -25,7 +25,7 @@ F 3 "https://www.arduino.cc/en/Main/arduinoBoardUno" H 2900 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDD #PWR?
+L BBQino-rescue:GNDD-power #PWR?
 U 1 1 6143AD0C
 P 3000 4400
 F 0 "#PWR?" H 3000 4150 50  0001 C CNN

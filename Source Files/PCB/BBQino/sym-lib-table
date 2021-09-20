@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name BBQino-rescue)(type Legacy)(uri ${KIPRJMOD}/BBQino-rescue.lib)(options "")(descr ""))
+)

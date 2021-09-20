@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector:Screw_Terminal_01x02 J?
+L BBQino-rescue:Screw_Terminal_01x02-Connector J?
 U 1 1 6143D9E7
 P 1250 1250
 F 0 "J?" H 1168 925 50  0000 C CNN
@@ -25,7 +25,7 @@ F 3 "~" H 1250 1250 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:D_Zener_ALT DZ1
+L BBQino-rescue:D_Zener_ALT-Device DZ1
 U 1 1 61441178
 P 2500 1350
 F 0 "DZ1" V 2454 1430 50  0000 L CNN
@@ -36,7 +36,7 @@ F 3 "https://www.mouser.it/datasheet/2/115/DIOD_S_A0003550684_1-2542352.pdf" H 2
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_US R1
+L BBQino-rescue:R_US-Device R1
 U 1 1 61441EC4
 P 2100 1700
 F 0 "R1" H 2168 1746 50  0000 L CNN
@@ -48,7 +48,7 @@ F 4 " 0.125W 1%" H 1600 1600 50  0000 L CNN "Value2 "
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L BBQino-rescue:C-Device C?
 U 1 1 61442C4C
 P 2500 1700
 F 0 "C?" H 2615 1746 50  0000 L CNN
@@ -84,7 +84,7 @@ Connection ~ 2100 1850
 Wire Wire Line
 	1450 1150 1900 1150
 $Comp
-L power:+12V #PWR?
+L BBQino-rescue:+12V-power #PWR?
 U 1 1 6144570A
 P 2500 1150
 F 0 "#PWR?" H 2500 1000 50  0001 C CNN
@@ -96,7 +96,7 @@ F 3 "" H 2500 1150 50  0001 C CNN
 $EndComp
 Connection ~ 2500 1150
 $Comp
-L power:GNDPWR #PWR?
+L BBQino-rescue:GNDPWR-power #PWR?
 U 1 1 61445C4C
 P 2500 1850
 F 0 "#PWR?" H 2500 1650 50  0001 C CNN
@@ -108,7 +108,7 @@ F 3 "" H 2500 1800 50  0001 C CNN
 $EndComp
 Connection ~ 2500 1850
 $Comp
-L Device:Q_PMOS_GDS Q1
+L BBQino-rescue:Q_PMOS_GDS-Device Q1
 U 1 1 614469CB
 P 2100 1250
 F 0 "Q1" V 2442 1250 50  0000 C CNN
@@ -123,7 +123,7 @@ Thermal Pad on both sides. \n
 Text Notes 1600 2400 0    50   ~ 0
 Analog 5V POWER RAIL\n
 $Comp
-L Device:C C?
+L BBQino-rescue:C-Device C?
 U 1 1 6144ECB3
 P 3250 3250
 F 0 "C?" H 3365 3296 50  0000 L CNN
@@ -134,7 +134,7 @@ F 3 "~" H 3250 3250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L BBQino-rescue:C-Device C?
 U 1 1 6144F727
 P 1650 3350
 F 0 "C?" H 1765 3396 50  0000 L CNN
@@ -145,7 +145,7 @@ F 3 "~" H 1650 3350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12V #PWR?
+L BBQino-rescue:+12V-power #PWR?
 U 1 1 614537EF
 P 1650 3050
 F 0 "#PWR?" H 1650 2900 50  0001 C CNN
@@ -173,7 +173,7 @@ Connection ~ 3100 3100
 Wire Wire Line
 	3100 3100 2850 3100
 $Comp
-L power:+5VA #PWR?
+L BBQino-rescue:+5VA-power #PWR?
 U 1 1 61456D2F
 P 3100 3050
 F 0 "#PWR?" H 3100 2900 50  0001 C CNN
@@ -184,7 +184,7 @@ F 3 "" H 3100 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDA #PWR?
+L BBQino-rescue:GNDA-power #PWR?
 U 1 1 61457278
 P 3250 3600
 F 0 "#PWR?" H 3250 3350 50  0001 C CNN
@@ -195,7 +195,7 @@ F 3 "" H 3250 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDPWR #PWR?
+L BBQino-rescue:GNDPWR-power #PWR?
 U 1 1 61459FC8
 P 2450 3650
 F 0 "#PWR?" H 2450 3450 50  0001 C CNN
@@ -226,7 +226,7 @@ Wire Wire Line
 Wire Wire Line
 	3100 3100 3100 3050
 $Comp
-L Regulator_Linear:ADP7142ARDZ-5.0 U?
+L BBQino-rescue:ADP7142ARDZ-5.0-Regulator_Linear U?
 U 1 1 614681CA
 P 2450 3200
 F 0 "U?" H 2450 3567 50  0000 C CNN
@@ -239,7 +239,7 @@ $EndComp
 Wire Wire Line
 	3100 3100 3250 3100
 $Comp
-L Device:C C?
+L BBQino-rescue:C-Device C?
 U 1 1 61474DD5
 P 2900 3500
 F 0 "C?" H 3015 3546 50  0000 L CNN
@@ -252,7 +252,7 @@ $EndComp
 Wire Wire Line
 	2900 3700 2900 3650
 $Comp
-L power:GNDA #PWR?
+L BBQino-rescue:GNDA-power #PWR?
 U 1 1 61476818
 P 2900 3700
 F 0 "#PWR?" H 2900 3450 50  0001 C CNN
