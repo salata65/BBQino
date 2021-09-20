@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name BBQino)(type KiCad)(uri ${KIPRJMOD}/Library/BBQino.pretty)(options "")(descr ""))
+)
