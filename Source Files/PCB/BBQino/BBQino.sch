@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 1 5
 Title "BBQino - DRAFT"
 Date "2021-09-08"
 Rev "REV 0"
@@ -34,5 +34,11 @@ S 1350 3800 700  650
 U 613FC6D4
 F0 "arduino" 50
 F1 "Arduino.sch" 50
+$EndSheet
+$Sheet
+S 950  5000 2000 1150
+U 614A5E16
+F0 "230V_loads" 50
+F1 "230Vloads.sch" 50
 $EndSheet
 $EndSCHEMATC
