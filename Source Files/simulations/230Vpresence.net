@@ -1,0 +1,11 @@
+* C:\users\linus\My Documents\Electronics\BBQino\BBQino\Source Files\simulations\230Vpresence.asc
+V1 N001 0 SINE(0 250 50)
+R1 K 0 15K tol=1 pwr=0.1
+D1 K N002 1N4148
+D2 N002 K NSPW500BS
+C1 N002 N001 0.1µ V=630 Irms=556m Rser=0.01433 Lser=0 mfg="KEMET" pn="C1812C104KBRAC" type="X7R"
+.model D D
+.lib C:\users\linus\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 0 0.1 0 100u
+.backanno
+.end

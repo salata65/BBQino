@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP FTR-MYAA005D
+D Power Relay 5VDC 5A SPST-NO (20mm 5mm 12mm) THT
+K
+F https://www.mouser.com/datasheet/2/164/ftr-my-19656.pdf
+$ENDCMP
+#
+#End Doc Library
