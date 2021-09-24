@@ -231,7 +231,7 @@ F 3 "" H 2065 4995 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text Notes 9300 1150 0    50   ~ 0
-Isolate with potting or conf. coating 
+Isolate with potting or conf. coating \nMount these componentes on the bottom. \nProtects against acidental touching
 $Comp
 L Connector:Conn_01x04_Female J_K1_M
 U 1 1 6151D7D1
@@ -432,4 +432,44 @@ F 3 "" H 5095 2900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4800 2900 5095 2900
+Text GLabel 4640 4445 0    50   Input ~ 0
+230V_OUT_1
+Text GLabel 4649 4851 0    50   Input ~ 0
+230V_OUT_2
+Text GLabel 4650 4600 0    50   Input ~ 0
+230V_N
+$Comp
+L Connector:Screw_Terminal_01x04 J?
+U 1 1 615B8777
+P 5215 4585
+F 0 "J?" H 5133 4260 50  0000 C CNN
+F 1 "230V out" H 5215 4890 50  0000 C CNN
+F 2 "Connector_TE-Connectivity:TE_826576-2_1x02_P3.96mm_Vertical" H 5215 4585 50  0001 C CNN
+F 3 "" H 5215 4585 50  0001 C CNN
+	1    5215 4585
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4910 4445 4910 4485
+Wire Wire Line
+	4910 4485 5015 4485
+Wire Wire Line
+	4650 4600 4945 4600
+Wire Wire Line
+	4945 4600 4945 4585
+Wire Wire Line
+	4945 4585 5015 4585
+Wire Wire Line
+	4945 4600 4945 4685
+Wire Wire Line
+	4945 4685 5015 4685
+Connection ~ 4945 4600
+Wire Wire Line
+	4640 4445 4910 4445
+Wire Wire Line
+	4649 4851 4949 4851
+Wire Wire Line
+	4949 4851 4949 4785
+Wire Wire Line
+	4949 4785 5015 4785
 $EndSCHEMATC

@@ -233,10 +233,10 @@ $EndComp
 Text Notes 9300 1150 0    50   ~ 0
 Isolate with potting or conf. coating \nMount these componentes on the bottom. \nProtects against acidental touching
 $Comp
-L Connector:Conn_01x04_Female J_K1_M
+L Connector:Conn_01x04_Female J_K1_M1
 U 1 1 6151D7D1
 P 4600 2800
-F 0 "J_K1_M" H 4492 2467 50  0000 C CNN
+F 0 "J_K1_M1" H 4492 2467 50  0000 C CNN
 F 1 "Conn_01x04_Female" H 4492 2466 50  0001 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4600 2800 50  0001 C CNN
 F 3 "~" H 4600 2800 50  0001 C CNN
@@ -244,10 +244,10 @@ F 3 "~" H 4600 2800 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector:Conn_01x04_Female J_K2_M
+L Connector:Conn_01x04_Female J_K2_M1
 U 1 1 6151E93A
 P 4600 3450
-F 0 "J_K2_M" H 4492 3117 50  0000 C CNN
+F 0 "J_K2_M1" H 4492 3117 50  0000 C CNN
 F 1 "Conn_01x04_Female" H 4492 3116 50  0001 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4600 3450 50  0001 C CNN
 F 3 "~" H 4600 3450 50  0001 C CNN
@@ -361,10 +361,10 @@ Wire Wire Line
 Text GLabel 5035 2700 2    50   Input ~ 0
 K1
 $Comp
-L Diode:1N4007 D?
+L Diode:1N4007 D5
 U 1 1 6157CE68
 P 2200 3800
-F 0 "D?" V 2149 3937 50  0000 L CNN
+F 0 "D5" V 2149 3937 50  0000 L CNN
 F 1 "1N4148W-HF" H 1944 4032 50  0001 L CNN
 F 2 "Diode_SMD:D_SOD-123" H 2200 3625 50  0001 C CNN
 F 3 "https://www.mouser.it/datasheet/2/80/QW-J0017_1N4148W-HF_RevA-1846955.pdf" H 2200 3800 50  0001 C CNN
@@ -372,10 +372,10 @@ F 3 "https://www.mouser.it/datasheet/2/80/QW-J0017_1N4148W-HF_RevA-1846955.pdf" 
 	0    1    1    0   
 $EndComp
 $Comp
-L Diode:1N4007 D?
+L Diode:1N4007 D6
 U 1 1 615877B5
 P 2220 4660
-F 0 "D?" V 2169 4797 50  0000 L CNN
+F 0 "D6" V 2169 4797 50  0000 L CNN
 F 1 "1N4148W-HF" H 1964 4892 50  0001 L CNN
 F 2 "Diode_SMD:D_SOD-123" H 2220 4485 50  0001 C CNN
 F 3 "https://www.mouser.it/datasheet/2/80/QW-J0017_1N4148W-HF_RevA-1846955.pdf" H 2220 4660 50  0001 C CNN
@@ -407,10 +407,10 @@ K2
 Wire Wire Line
 	5035 3350 4800 3350
 $Comp
-L power:GNDD #PWR?
+L power:GNDD #PWR0114
 U 1 1 615A23E8
 P 5095 3550
-F 0 "#PWR?" H 5095 3300 50  0001 C CNN
+F 0 "#PWR0114" H 5095 3300 50  0001 C CNN
 F 1 "GNDD" H 5099 3395 50  0000 C CNN
 F 2 "" H 5095 3550 50  0001 C CNN
 F 3 "" H 5095 3550 50  0001 C CNN
@@ -420,10 +420,10 @@ $EndComp
 Wire Wire Line
 	4800 3550 5095 3550
 $Comp
-L power:GNDD #PWR?
+L power:GNDD #PWR0115
 U 1 1 615A714B
 P 5095 2900
-F 0 "#PWR?" H 5095 2650 50  0001 C CNN
+F 0 "#PWR0115" H 5095 2650 50  0001 C CNN
 F 1 "GNDD" H 5099 2745 50  0000 C CNN
 F 2 "" H 5095 2900 50  0001 C CNN
 F 3 "" H 5095 2900 50  0001 C CNN
@@ -439,13 +439,13 @@ Text GLabel 4649 4851 0    50   Input ~ 0
 Text GLabel 4650 4600 0    50   Input ~ 0
 230V_N
 $Comp
-L Connector:Screw_Terminal_01x04 J?
+L Connector:Screw_Terminal_01x04 J3
 U 1 1 615B8777
 P 5215 4585
-F 0 "J?" H 5133 4260 50  0000 C CNN
+F 0 "J3" H 5133 4260 50  0000 C CNN
 F 1 "230V out" H 5215 4890 50  0000 C CNN
-F 2 "Connector_TE-Connectivity:TE_826576-2_1x02_P3.96mm_Vertical" H 5215 4585 50  0001 C CNN
-F 3 "" H 5215 4585 50  0001 C CNN
+F 2 "BBQino:TB00250004BE" H 5215 4585 50  0001 C CNN
+F 3 "https://www.mouser.it/datasheet/2/670/tb002_500-2306853.pdf" H 5215 4585 50  0001 C CNN
 	1    5215 4585
 	1    0    0    -1  
 $EndComp
