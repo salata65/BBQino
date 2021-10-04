@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 5
+Sheet 5 6
 Title ""
 Date ""
 Rev ""
@@ -472,4 +472,26 @@ Wire Wire Line
 	4949 4851 4949 4785
 Wire Wire Line
 	4949 4785 5015 4785
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 6151F1F6
+P 10108 5768
+F 0 "H1" H 10208 5814 50  0001 L CNN
+F 1 "MountingHole" H 10208 5768 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm" H 10108 5768 50  0001 C CNN
+F 3 "~" H 10108 5768 50  0001 C CNN
+	1    10108 5768
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 61520C2A
+P 10120 6013
+F 0 "H2" H 10220 6059 50  0000 L CNN
+F 1 "MountingHole" H 10220 5968 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm" H 10120 6013 50  0001 C CNN
+F 3 "~" H 10120 6013 50  0001 C CNN
+	1    10120 6013
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

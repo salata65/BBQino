@@ -494,7 +494,7 @@
   )
 
   (module Diode_SMD:D_SOD-123 (layer F.Cu) (tedit 58645DC7) (tstamp 614DC0C8)
-    (at 65.221001 136.303001)
+    (at 87.065001 51.467001)
     (descr SOD-123)
     (tags SOD-123)
     (path /614A5E16/615877B5)
@@ -538,7 +538,7 @@
   )
 
   (module Diode_SMD:D_SOD-123 (layer F.Cu) (tedit 58645DC7) (tstamp 614DC0AF)
-    (at 55.871001 145.783001)
+    (at 77.715001 60.947001)
     (descr SOD-123)
     (tags SOD-123)
     (path /614A5E16/6157CE68)
@@ -1064,7 +1064,7 @@
   )
 
   (module Package_SO:SOIC-8_3.9x4.9mm_P1.27mm (layer F.Cu) (tedit 5D9F72B1) (tstamp 6145161D)
-    (at 47.9 93.46)
+    (at 66.442 41.136)
     (descr "SOIC, 8 Pin (JEDEC MS-012AA, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/soic_narrow-r/r_8.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /61391ED2/6139200A)
@@ -1115,7 +1115,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5DC5FE76) (tstamp 61451603)
-    (at 51.036 149.438)
+    (at 72.88 64.602)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /613C1456/614681CA)
@@ -1172,7 +1172,7 @@
   )
 
   (module Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder (layer F.Cu) (tedit 5F68FEEE) (tstamp 614515E4)
-    (at 68.926 139.638)
+    (at 90.77 54.802)
     (descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor handsolder")
     (path /613C1456/61441EC4)
@@ -1208,7 +1208,7 @@
   )
 
   (module Package_TO_SOT_SMD:TO-252-2 (layer F.Cu) (tedit 5A70A390) (tstamp 614515D3)
-    (at 52.886 142.188)
+    (at 74.73 57.352)
     (descr "TO-252 / DPAK SMD package, http://www.infineon.com/cms/en/product/packages/PG-TO252/PG-TO252-3-1/")
     (tags "DPAK TO-252 DPAK-3 TO-252-3 SOT-428")
     (path /613C1456/614469CB)
@@ -1264,7 +1264,7 @@
   )
 
   (module Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm_NumberLabels (layer F.Cu) (tedit 5A3F6CCC) (tstamp 614515AF)
-    (at 57.8 95.56)
+    (at 76.342 43.236)
     (descr "SMD Solder Jumper, 1x1.5mm Pads, 0.3mm gap, open, labeled with numbers")
     (tags "solder jumper open")
     (path /61391ED2/613A06AE)
@@ -1298,7 +1298,7 @@
   )
 
   (module Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm_NumberLabels (layer F.Cu) (tedit 5A3F6CCC) (tstamp 6145159E)
-    (at 52.15 98.46)
+    (at 70.692 46.136)
     (descr "SMD Solder Jumper, 1x1.5mm Pads, 0.3mm gap, open, labeled with numbers")
     (tags "solder jumper open")
     (path /61391ED2/613A016A)
@@ -1332,7 +1332,7 @@
   )
 
   (module Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm_NumberLabels (layer F.Cu) (tedit 5A3F6CCC) (tstamp 6145158D)
-    (at 54.95 92.01)
+    (at 73.492 39.686)
     (descr "SMD Solder Jumper, 1x1.5mm Pads, 0.3mm gap, open, labeled with numbers")
     (tags "solder jumper open")
     (path /61391ED2/61396B54)
@@ -1366,7 +1366,7 @@
   )
 
   (module TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-2_1x02_P2.54mm_Horizontal (layer F.Cu) (tedit 5B1EC513) (tstamp 6145157C)
-    (at 90.932 122.428)
+    (at 54.61 60.452)
     (descr "Terminal Block TE 282834-2, 2 pins, pitch 2.54mm, size 5.54x6.5mm^2, drill diamater 1.1mm, pad diameter 2.1mm, see http://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Customer+Drawing%7F282834%7FC1%7Fpdf%7FEnglish%7FENG_CD_282834_C1.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_TE-Connectivity")
     (tags "THT Terminal Block TE 282834-2 pitch 2.54mm size 5.54x6.5mm^2 drill 1.1mm pad 2.1mm")
     (path /613C1456/6143D9E7)
@@ -1416,7 +1416,7 @@
   )
 
   (module Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm_NumberLabels (layer F.Cu) (tedit 5A3F6CCC) (tstamp 6145155C)
-    (at 46.5 98.46)
+    (at 65.042 46.136)
     (descr "SMD Solder Jumper, 1x1.5mm Pads, 0.3mm gap, open, labeled with numbers")
     (tags "solder jumper open")
     (path /61391ED2/613B5C58)
@@ -1450,7 +1450,7 @@
   )
 
   (module Diode_SMD:D_SOD-123 (layer F.Cu) (tedit 58645DC7) (tstamp 6145154B)
-    (at 58.136 148.388)
+    (at 79.98 63.552)
     (descr SOD-123)
     (tags SOD-123)
     (path /613C1456/61441178)

@@ -1,7 +1,22 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP DG4052EEN-T1-GE4
+D VISHAY - DG4052EEN-T1-GE4 - ANALOGUE MUX, 2 CH, 4:1, MINIQFN-16
+F https://componentsearchengine.com/Datasheets/1/DG4052EEN-T1-GE4.pdf
+$ENDCMP
+#
 $CMP FTR-MYAA005D
-D 5v relay, max current 5A, 1kV isolation 
+D 5v relay, max current 5A, 1kV isolation
+$ENDCMP
+#
+$CMP MAX6675ISA+T
+D Sensor Interface Cold-Junction-Compensated K-Thermocouple-to-Digital Converter (0 C to +1024 C)
+F https://datasheets.maximintegrated.com/en/ds/MAX6675.pdf
+$ENDCMP
+#
+$CMP VOD205T
+D Vishay VOD205T DC Input, Transistor Output Dual Optocoupler, SMT SOIC 8
+F http://www.vishay.com/docs/81956/vod205t.pdf
 $ENDCMP
 #
 #End Doc Library

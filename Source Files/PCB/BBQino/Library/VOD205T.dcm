@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP VOD205T
+D Vishay VOD205T DC Input, Transistor Output Dual Optocoupler, SMT SOIC 8
+K
+F http://www.vishay.com/docs/81956/vod205t.pdf
+$ENDCMP
+#
+#End Doc Library

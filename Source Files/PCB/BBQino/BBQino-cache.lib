@@ -184,6 +184,42 @@ X Pin_3 3 200 -100 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# BBQino-rescue_DG4052EEN-T1-GE4
+#
+DEF BBQino-rescue_DG4052EEN-T1-GE4 IC 0 30 Y Y 1 F N
+F0 "IC" 950 500 50 H V L CNN
+F1 "BBQino-rescue_DG4052EEN-T1-GE4" 950 400 50 H V L CNN
+F2 "QFN40P180X260X60-16N-D" 950 300 50 H I L CNN
+F3 "https://componentsearchengine.com/Datasheets/1/DG4052EEN-T1-GE4.pdf" 950 200 50 H I L CNN
+F4 "VISHAY - DG4052EEN-T1-GE4 - ANALOGUE MUX, 2 CH, 4:1, MINIQFN-16" 950 100 50 H I L CNN "Description"
+F5 "0.6" 950 0 50 H I L CNN "Height"
+F6 "Vishay" 950 -100 50 H I L CNN "Manufacturer_Name"
+F7 "DG4052EEN-T1-GE4" 950 -200 50 H I L CNN "Manufacturer_Part_Number"
+F8 "78-DG4052EEN-T1-GE4" 950 -300 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/DG4052EEN-T1-GE4?qs=tucQmhgEO3pP3ZdfbA7YKw%3D%3D" 950 -400 50 H I L CNN "Mouser Price/Stock"
+F10 "DG4052EEN-T1-GE4" 950 -500 50 H I L CNN "Arrow Part Number"
+F11 "https://www.arrow.com/en/products/dg4052een-t1-ge4/vishay" 950 -600 50 H I L CNN "Arrow Price/Stock"
+DRAW
+P 5 0 1 6 200 300 900 300 900 -700 200 -700 200 300 N
+X Y 1 0 0 200 R 50 50 0 0 O
+X X0 10 1100 -100 200 L 50 50 0 0 I
+X X 11 1100 0 200 L 50 50 0 0 O
+X X1 12 1100 -200 200 L 50 50 0 0 I
+X X2 13 1100 -300 200 L 50 50 0 0 I
+X V+ 14 650 500 200 D 50 50 0 0 W
+X Y0 15 0 -100 200 R 50 50 0 0 I
+X Y2 16 0 -300 200 R 50 50 0 0 I
+X Y3 2 0 -400 200 R 50 50 0 0 I
+X Y1 3 0 -200 200 R 50 50 0 0 I
+X ENABLE 4 450 -900 200 U 50 50 0 0 I I
+X V- 5 450 500 200 D 50 50 0 0 W
+X GND 6 550 500 200 D 50 50 0 0 W
+X B 7 550 -900 200 U 50 50 0 0 I
+X A 8 650 -900 200 U 50 50 0 0 I
+X X3 9 1100 -400 200 L 50 50 0 0 I
+ENDDRAW
+ENDDEF
+#
 # BBQino-rescue_D_Zener_ALT-Device
 #
 DEF BBQino-rescue_D_Zener_ALT-Device D 0 40 N N 1 F N
@@ -314,6 +350,32 @@ X B 3 250 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# BBQino-rescue_MAX6675ISA+T
+#
+DEF BBQino-rescue_MAX6675ISA+T IC 0 30 Y Y 1 F N
+F0 "IC" 950 300 50 H V L CNN
+F1 "BBQino-rescue_MAX6675ISA+T" 950 200 50 H V L CNN
+F2 "SOIC127P600X175-8N" 950 100 50 H I L CNN
+F3 "https://datasheets.maximintegrated.com/en/ds/MAX6675.pdf" 950 0 50 H I L CNN
+F4 "Sensor Interface Cold-Junction-Compensated K-Thermocouple-to-Digital Converter (0 C to +1024 C)" 950 -100 50 H I L CNN "Description"
+F5 "1.75" 950 -200 50 H I L CNN "Height"
+F6 "Maxim Integrated" 950 -300 50 H I L CNN "Manufacturer_Name"
+F7 "MAX6675ISA+T" 950 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "700-MAX6675ISAT" 950 -500 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/Maxim-Integrated/MAX6675ISA%2bT?qs=1THa7WoU59FV%2FT3S8QjZ%252Bg%3D%3D" 950 -600 50 H I L CNN "Mouser Price/Stock"
+DRAW
+P 5 0 1 6 200 100 900 100 900 -400 200 -400 200 100 N
+X GND 1 0 0 200 R 50 50 0 0 P
+X T- 2 0 -100 200 R 50 50 0 0 P
+X T+ 3 0 -200 200 R 50 50 0 0 P
+X VCC 4 0 -300 200 R 50 50 0 0 P
+X SCK 5 1100 -300 200 L 50 50 0 0 P
+X ~CS 6 1100 -200 200 L 50 50 0 0 P
+X SO 7 1100 -100 200 L 50 50 0 0 P
+X N.C. 8 1100 0 200 L 50 50 0 0 N
+ENDDRAW
+ENDDEF
+#
 # BBQino-rescue_Q_PMOS_GDS-Device
 #
 DEF BBQino-rescue_Q_PMOS_GDS-Device Q 0 0 Y N 1 F N
@@ -383,6 +445,41 @@ P 2 1 1 6 -14 -80 20 -113 N
 P 2 1 1 6 -14 20 20 -13 N
 X Pin_1 1 -200 0 150 R 50 50 1 1 P
 X Pin_2 2 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# BBQino-rescue_VOD205T
+#
+DEF BBQino-rescue_VOD205T IC 0 30 Y Y 1 F N
+F0 "IC" 1550 300 50 H V L CNN
+F1 "BBQino-rescue_VOD205T" 1550 200 50 H V L CNN
+F2 "SOIC127P610X323-8N" 1550 100 50 H I L CNN
+F3 "http://www.vishay.com/docs/81956/vod205t.pdf" 1550 0 50 H I L CNN
+F4 "Vishay VOD205T DC Input, Transistor Output Dual Optocoupler, SMT SOIC 8" 1550 -100 50 H I L CNN "Description"
+F5 "3.23" 1550 -200 50 H I L CNN "Height"
+F6 "Vishay" 1550 -300 50 H I L CNN "Manufacturer_Name"
+F7 "VOD205T" 1550 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "78-VOD205T" 1550 -500 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/VOD205T?qs=OZzrG8p9eNh%2FWG3FDe7e4g%3D%3D" 1550 -600 50 H I L CNN "Mouser Price/Stock"
+F10 "VOD205T" 1550 -700 50 H I L CNN "Arrow Part Number"
+F11 "https://www.arrow.com/en/products/vod205t/vishay" 1550 -800 50 H I L CNN "Arrow Price/Stock"
+DRAW
+S 450 -100 550 -100 0 1 0 N
+S 500 0 500 -100 0 1 0 N
+P 3 0 1 0 1200 -50 1200 50 1200 0 N
+P 5 0 1 6 200 100 1500 100 1500 -400 200 -400 200 100 N
+P 6 0 1 0 600 -150 650 -100 600 -100 650 -100 650 -150 650 -100 N
+P 6 0 1 0 650 -200 700 -150 700 -200 700 -150 650 -150 700 -150 N
+P 8 0 1 0 450 -100 500 -200 550 -100 500 -200 550 -200 450 -200 500 -200 500 -300 N
+P 10 0 1 0 1100 -50 1100 -250 1100 -150 1200 -50 1100 -150 1200 -250 1200 -200 1150 -250 1200 -250 1200 -350 N
+X A1 1 0 0 200 R 50 50 0 0 P
+X K1 2 0 -100 200 R 50 50 0 0 P
+X A2 3 0 -200 200 R 50 50 0 0 P
+X K2 4 0 -300 200 R 50 50 0 0 P
+X E2 5 1700 -300 200 L 50 50 0 0 P
+X C2 6 1700 -200 200 L 50 50 0 0 P
+X E1 7 1700 -100 200 L 50 50 0 0 P
+X C1 8 1700 0 200 L 50 50 0 0 P
 ENDDRAW
 ENDDEF
 #
@@ -492,6 +589,34 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Device_Q_NMOS_GDS
+#
+DEF Device_Q_NMOS_GDS Q 0 0 Y N 1 F N
+F0 "Q" 200 50 50 H V L CNN
+F1 "Device_Q_NMOS_GDS" 200 -50 50 H V L CNN
+F2 "" 200 100 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C 65 0 110 0 1 10 N
+C 100 -70 10 0 1 0 F
+C 100 70 10 0 1 0 F
+P 2 0 1 0 10 0 -100 0 N
+P 2 0 1 10 10 75 10 -75 N
+P 2 0 1 10 30 -50 30 -90 N
+P 2 0 1 10 30 20 30 -20 N
+P 2 0 1 10 30 90 30 50 N
+P 2 0 1 0 100 100 100 70 N
+P 3 0 1 0 100 -100 100 0 30 0 N
+P 4 0 1 0 30 -70 130 -70 130 70 30 70 N
+P 4 0 1 0 40 0 80 15 80 -15 40 0 F
+P 4 0 1 0 110 20 115 15 145 15 150 10 N
+P 4 0 1 0 130 15 115 -10 145 -10 130 15 N
+X G 1 -200 0 100 R 50 50 1 1 I
+X D 2 100 200 100 D 50 50 1 1 P
+X S 3 100 -200 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Device_R_US
 #
 DEF Device_R_US R 0 0 N Y 1 F N
@@ -513,6 +638,37 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Device_Thermocouple
+#
+DEF Device_Thermocouple TC 0 0 N Y 1 F N
+F0 "TC" -120 150 50 H V C CNN
+F1 "Device_Thermocouple" -200 -160 50 H V L CNN
+F2 "" -575 50 50 H I C CNN
+F3 "" -575 50 50 H I C CNN
+$FPLIST
+ PIN?ARRAY*
+ bornier*
+ *Terminal?Block*
+ Thermo*Couple*
+$ENDFPLIST
+DRAW
+C -120 0 10 0 1 0 F
+P 2 0 1 0 -160 -40 -170 -50 N
+P 2 0 1 0 -140 -20 -150 -30 N
+P 2 0 1 0 -120 0 -130 -10 N
+P 2 0 1 0 -100 20 -110 10 N
+P 2 0 1 0 -80 40 -90 30 N
+P 2 0 1 0 -60 60 -70 50 N
+P 2 0 1 0 -40 80 -50 70 N
+P 2 0 1 0 -20 100 -30 90 N
+P 2 0 1 0 0 -100 -10 -100 N
+P 2 0 1 0 0 100 -20 100 N
+P 3 0 1 0 10 -100 -20 -100 -170 50 N
+X + 1 100 100 100 L 50 50 1 1 P
+X - 2 100 -100 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Diode_1N4007
 #
 DEF Diode_1N4007 D 0 40 N N 1 F N
@@ -530,6 +686,49 @@ P 2 0 1 0 50 0 -50 0 N
 P 4 0 1 10 50 50 50 -50 -50 0 50 50 N
 X K 1 -150 0 100 R 50 50 1 1 P
 X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Mechanical_MountingHole
+#
+DEF Mechanical_MountingHole H 0 40 Y Y 1 F N
+F0 "H" 0 200 50 H V C CNN
+F1 "Mechanical_MountingHole" 0 125 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ MountingHole*
+$ENDFPLIST
+DRAW
+C 0 0 50 0 1 50 N
+ENDDRAW
+ENDDEF
+#
+# power_+5VA
+#
+DEF power_+5VA #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_+5VA" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +5VA 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_GNDA
+#
+DEF power_GNDA #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GNDA" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GNDA 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #

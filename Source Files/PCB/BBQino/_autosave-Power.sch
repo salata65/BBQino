@@ -269,64 +269,75 @@ Wire Wire Line
 $Comp
 L BBQino-rescue:VOD205T IC?
 U 1 1 615B3951
-P 7605 2493
-F 0 "IC?" H 8455 2758 50  0000 C CNN
-F 1 "VOD205T" H 8455 2667 50  0000 C CNN
-F 2 "SOIC127P610X323-8N" H 9155 2593 50  0001 L CNN
-F 3 "http://www.vishay.com/docs/81956/vod205t.pdf" H 9155 2493 50  0001 L CNN
-F 4 "Vishay VOD205T DC Input, Transistor Output Dual Optocoupler, SMT SOIC 8" H 9155 2393 50  0001 L CNN "Description"
-F 5 "3.23" H 9155 2293 50  0001 L CNN "Height"
-F 6 "Vishay" H 9155 2193 50  0001 L CNN "Manufacturer_Name"
-F 7 "VOD205T" H 9155 2093 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "78-VOD205T" H 9155 1993 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/VOD205T?qs=OZzrG8p9eNh%2FWG3FDe7e4g%3D%3D" H 9155 1893 50  0001 L CNN "Mouser Price/Stock"
-F 10 "VOD205T" H 9155 1793 50  0001 L CNN "Arrow Part Number"
-F 11 "https://www.arrow.com/en/products/vod205t/vishay" H 9155 1693 50  0001 L CNN "Arrow Price/Stock"
-	1    7605 2493
+P 5628 1565
+F 0 "IC?" H 6478 1830 50  0000 C CNN
+F 1 "VOD205T" H 6478 1739 50  0000 C CNN
+F 2 "SOIC127P610X323-8N" H 7178 1665 50  0001 L CNN
+F 3 "http://www.vishay.com/docs/81956/vod205t.pdf" H 7178 1565 50  0001 L CNN
+F 4 "Vishay VOD205T DC Input, Transistor Output Dual Optocoupler, SMT SOIC 8" H 7178 1465 50  0001 L CNN "Description"
+F 5 "3.23" H 7178 1365 50  0001 L CNN "Height"
+F 6 "Vishay" H 7178 1265 50  0001 L CNN "Manufacturer_Name"
+F 7 "VOD205T" H 7178 1165 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "78-VOD205T" H 7178 1065 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/VOD205T?qs=OZzrG8p9eNh%2FWG3FDe7e4g%3D%3D" H 7178 965 50  0001 L CNN "Mouser Price/Stock"
+F 10 "VOD205T" H 7178 865 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/vod205t/vishay" H 7178 765 50  0001 L CNN "Arrow Price/Stock"
+	1    5628 1565
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_GDS Q?
+U 1 1 615C1935
+P 8112 1936
+F 0 "Q?" H 8317 1982 50  0000 L CNN
+F 1 "DMN4040SK3" H 8317 1891 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 8312 2036 50  0001 C CNN
+F 3 "https://www.mouser.it/datasheet/2/115/DIODS13197_1-2541721.pdf" H 8112 1936 50  0001 C CNN
+	1    8112 1936
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_GDS Q?
+U 1 1 615C31E4
+P 9636 1540
+F 0 "Q?" H 9841 1586 50  0000 L CNN
+F 1 "DMN4040SK3" H 9841 1495 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 9836 1640 50  0001 C CNN
+F 3 "https://www.mouser.it/datasheet/2/115/DIODS13197_1-2541721.pdf" H 9636 1540 50  0001 C CNN
+	1    9636 1540
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_GDS Q?
+U 1 1 615C7565
+P 9636 1940
+F 0 "Q?" H 9841 1986 50  0000 L CNN
+F 1 "DMN4040SK3" H 9841 1895 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 9836 2040 50  0001 C CNN
+F 3 "https://www.mouser.it/datasheet/2/115/DIODS13197_1-2541721.pdf" H 9636 1940 50  0001 C CNN
+	1    9636 1940
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 615FE2CF
+P 8862 798
+F 0 "#PWR?" H 8862 648 50  0001 C CNN
+F 1 "+12V" H 8877 971 50  0000 C CNN
+F 2 "" H 8862 798 50  0001 C CNN
+F 3 "" H 8862 798 50  0001 C CNN
+	1    8862 798 
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:Q_NMOS_GDS Q?
 U 1 1 615B46B7
-P 9673 1340
-F 0 "Q?" H 9877 1386 50  0000 L CNN
-F 1 "Q_NMOS_GDS" H 9877 1295 50  0000 L CNN
-F 2 "" H 9873 1440 50  0001 C CNN
-F 3 "~" H 9673 1340 50  0001 C CNN
-	1    9673 1340
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Q_NMOS_GDS Q?
-U 1 1 615B8A4A
-P 9672 1916
-F 0 "Q?" H 9876 1962 50  0000 L CNN
-F 1 "Q_NMOS_GDS" H 9876 1871 50  0000 L CNN
-F 2 "" H 9872 2016 50  0001 C CNN
-F 3 "~" H 9672 1916 50  0001 C CNN
-	1    9672 1916
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Q_NMOS_GDS Q?
-U 1 1 615B90C8
-P 7882 1401
-F 0 "Q?" H 8086 1447 50  0000 L CNN
-F 1 "Q_NMOS_GDS" H 8086 1356 50  0000 L CNN
-F 2 "" H 8082 1501 50  0001 C CNN
-F 3 "~" H 7882 1401 50  0001 C CNN
-	1    7882 1401
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Q_NMOS_GDS Q?
-U 1 1 615B995D
-P 7882 1925
-F 0 "Q?" H 8086 1971 50  0000 L CNN
-F 1 "Q_NMOS_GDS" H 8086 1880 50  0000 L CNN
-F 2 "" H 8082 2025 50  0001 C CNN
-F 3 "~" H 7882 1925 50  0001 C CNN
-	1    7882 1925
+P 8112 1536
+F 0 "Q?" H 8317 1582 50  0000 L CNN
+F 1 "DMN4040SK3" H 8317 1491 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 8312 1636 50  0001 C CNN
+F 3 "https://www.mouser.it/datasheet/2/115/DIODS13197_1-2541721.pdf" H 8112 1536 50  0001 C CNN
+	1    8112 1536
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
