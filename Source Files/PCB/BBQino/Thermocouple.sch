@@ -16,10 +16,10 @@ $EndDescr
 Text Notes 609  1661 0    100  ~ 0
 MAX6675\nType -K Thermocouple\n\n● Cold-Junction Compensation\n● Simple SPI-Compatible Serial Interface\n● 12-Bit, 0.25°C Resolution\n● Open Thermocouple Detection
 $Comp
-L BBQino-rescue:MAX6675ISA+T IC?
+L BBQino-rescue:MAX6675ISA+T IC3
 U 1 1 615ACA16
 P 3970 3575
-F 0 "IC?" H 4520 3840 50  0000 C CNN
+F 0 "IC3" H 4520 3840 50  0000 C CNN
 F 1 "MAX6675ISA+T" H 4520 3749 50  0000 C CNN
 F 2 "BBQino:SOIC127P600X175-8N" H 4920 3675 50  0001 L CNN
 F 3 "https://datasheets.maximintegrated.com/en/ds/MAX6675.pdf" H 4920 3575 50  0001 L CNN
@@ -33,10 +33,10 @@ F 9 "https://www.mouser.co.uk/ProductDetail/Maxim-Integrated/MAX6675ISA%2bT?qs=1
 	1    0    0    -1  
 $EndComp
 $Comp
-L BBQino-rescue:DG4052EEN-T1-GE4 IC?
+L BBQino-rescue:DG4052EEN-T1-GE4 IC2
 U 1 1 615ADDB4
 P 2145 3750
-F 0 "IC?" H 3105 3020 50  0000 L CNN
+F 0 "IC2" H 3105 3020 50  0000 L CNN
 F 1 "DG4052EEN-T1-GE4" H 3105 2933 50  0000 L CNN
 F 2 "BBQino:QFN40P180X260X60-16N-D" H 3095 4050 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/DG4052EEN-T1-GE4.pdf" H 3095 3950 50  0001 L CNN
@@ -52,10 +52,10 @@ F 11 "https://www.arrow.com/en/products/dg4052een-t1-ge4/vishay" H 3095 3150 50 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Thermocouple TC?
+L Device:Thermocouple TC1
 U 1 1 615AEE20
 P 1405 3505
-F 0 "TC?" H 1378 3830 50  0000 C CNN
+F 0 "TC1" H 1378 3830 50  0000 C CNN
 F 1 "Thermocouple" H 1378 3739 50  0000 C CNN
 F 2 "" H 830 3555 50  0001 C CNN
 F 3 "~" H 830 3555 50  0001 C CNN
@@ -63,10 +63,10 @@ F 3 "~" H 830 3555 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Thermocouple TC?
+L Device:Thermocouple TC2
 U 1 1 615AF447
 P 1435 4245
-F 0 "TC?" H 1408 4570 50  0000 C CNN
+F 0 "TC2" H 1408 4570 50  0000 C CNN
 F 1 "Thermocouple" H 1408 4479 50  0000 C CNN
 F 2 "" H 860 4295 50  0001 C CNN
 F 3 "~" H 860 4295 50  0001 C CNN
@@ -74,10 +74,10 @@ F 3 "~" H 860 4295 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Thermocouple TC?
+L Device:Thermocouple TC3
 U 1 1 615AF6AE
 P 1435 5095
-F 0 "TC?" H 1408 5420 50  0000 C CNN
+F 0 "TC3" H 1408 5420 50  0000 C CNN
 F 1 "Thermocouple" H 1408 5329 50  0000 C CNN
 F 2 "" H 860 5145 50  0001 C CNN
 F 3 "~" H 860 5145 50  0001 C CNN
@@ -93,10 +93,10 @@ Wire Wire Line
 Wire Wire Line
 	2695 3195 2695 3250
 $Comp
-L power:+5VA #PWR?
+L power:+5VA #PWR0122
 U 1 1 615BEA1C
 P 2795 3140
-F 0 "#PWR?" H 2795 2990 50  0001 C CNN
+F 0 "#PWR0122" H 2795 2990 50  0001 C CNN
 F 1 "+5VA" H 2810 3313 50  0000 C CNN
 F 2 "" H 2795 3140 50  0001 C CNN
 F 3 "" H 2795 3140 50  0001 C CNN
@@ -106,10 +106,10 @@ $EndComp
 Wire Wire Line
 	2795 3250 2795 3140
 $Comp
-L power:GNDA #PWR?
+L power:GNDA #PWR0123
 U 1 1 615C0417
 P 2595 4880
-F 0 "#PWR?" H 2595 4630 50  0001 C CNN
+F 0 "#PWR0123" H 2595 4630 50  0001 C CNN
 F 1 "GNDA" H 2600 4707 50  0000 C CNN
 F 2 "" H 2595 4880 50  0001 C CNN
 F 3 "" H 2595 4880 50  0001 C CNN
@@ -191,10 +191,10 @@ Wire Wire Line
 Wire Wire Line
 	3280 3750 3245 3750
 $Comp
-L power:+5VA #PWR?
+L power:+5VA #PWR0124
 U 1 1 615DC0DB
 P 3970 3875
-F 0 "#PWR?" H 3970 3725 50  0001 C CNN
+F 0 "#PWR0124" H 3970 3725 50  0001 C CNN
 F 1 "+5VA" H 3985 4048 50  0000 C CNN
 F 2 "" H 3970 3875 50  0001 C CNN
 F 3 "" H 3970 3875 50  0001 C CNN
@@ -202,10 +202,10 @@ F 3 "" H 3970 3875 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GNDA #PWR?
+L power:GNDA #PWR0125
 U 1 1 615DC6B6
 P 3970 3575
-F 0 "#PWR?" H 3970 3325 50  0001 C CNN
+F 0 "#PWR0125" H 3970 3325 50  0001 C CNN
 F 1 "GNDA" H 3975 3402 50  0000 C CNN
 F 2 "" H 3970 3575 50  0001 C CNN
 F 3 "" H 3970 3575 50  0001 C CNN
