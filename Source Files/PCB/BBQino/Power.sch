@@ -506,9 +506,9 @@ F 3 "~" H 9015 1960 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	9015 1760 9505 1760
+	9015 1760 9206 1760
 Wire Wire Line
-	8915 1760 8405 1760
+	8915 1760 8702 1760
 $Comp
 L Device:C C8
 U 1 1 6177354B
@@ -693,4 +693,32 @@ Text Notes 9295 5145 0    100  ~ 0
 I2C current sensing\n
 Wire Notes Line
 	6980 5105 6980 6500
+$Comp
+L Device:C C?
+U 1 1 619C74D7
+P 8968 1620
+F 0 "C?" H 9083 1666 50  0000 L CNN
+F 1 "C" H 9083 1575 50  0000 L CNN
+F 2 "" H 9006 1470 50  0001 C CNN
+F 3 "~" H 8968 1620 50  0001 C CNN
+	1    8968 1620
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9118 1620 9206 1620
+Wire Wire Line
+	9206 1620 9206 1760
+Connection ~ 9206 1760
+Wire Wire Line
+	9206 1760 9505 1760
+Wire Wire Line
+	8820 1620 8818 1620
+Wire Wire Line
+	8702 1620 8702 1760
+Connection ~ 8818 1620
+Wire Wire Line
+	8818 1620 8702 1620
+Connection ~ 8702 1760
+Wire Wire Line
+	8702 1760 8405 1760
 $EndSCHEMATC

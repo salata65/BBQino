@@ -51,7 +51,9 @@ $Comp
 L Amplifier_Current:INA181 U?
 U 1 1 618CA589
 P 8780 2410
-F 0 "U?" H 9124 2456 50  0000 L CNN
+AR Path="/613C1456/618CA589" Ref="U?"  Part="1" 
+AR Path="/613FC6D4/618CA589" Ref="U3"  Part="1" 
+F 0 "U3" H 9124 2456 50  0000 L CNN
 F 1 "INA181" H 9124 2365 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-6" H 8830 2460 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/ina181.pdf" H 8930 2560 50  0001 C CNN

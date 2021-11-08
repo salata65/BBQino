@@ -494,4 +494,289 @@ F 3 "~" H 10120 6013 50  0001 C CNN
 	1    10120 6013
 	1    0    0    -1  
 $EndComp
+Text Notes 1793 3498 0    50   ~ 0
+5V relays\n
+Wire Notes Line
+	1709 3463 687  3463
+Wire Notes Line
+	687  3463 687  5463
+Wire Notes Line
+	687  5463 3227 5463
+Wire Notes Line
+	3227 5463 3227 3473
+Wire Notes Line
+	3227 3473 2275 3473
+Text Notes 2929 5860 0    50   ~ 0
+General purpose 12V relays
+$Comp
+L Diode:1N4007 D7
+U 1 1 61877E3C
+P 1400 6674
+F 0 "D7" V 1349 6811 50  0000 L CNN
+F 1 "1N4148W-HF" H 1144 6906 50  0001 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 1400 6499 50  0001 C CNN
+F 3 "https://www.mouser.it/datasheet/2/80/QW-J0017_1N4148W-HF_RevA-1846955.pdf" H 1400 6674 50  0001 C CNN
+	1    1400 6674
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J_K11
+U 1 1 61880127
+P 3144 7414
+F 0 "J_K11" H 3116 7342 50  0000 R CNN
+F 1 "Conn_01x04_Male" H 3116 7387 50  0001 R CNN
+F 2 "" H 3144 7414 50  0001 C CNN
+F 3 "~" H 3144 7414 50  0001 C CNN
+	1    3144 7414
+	-1   0    0    1   
+$EndComp
+$Comp
+L Relay:FINDER-40.41 K3
+U 1 1 6188E0AB
+P 2092 6660
+F 0 "K3" H 2522 6706 50  0000 L CNN
+F 1 "FINDER-40.41" H 2522 6615 50  0000 L CNN
+F 2 "Relay_THT:Relay_SPDT_Finder_40.41" H 3232 6620 50  0001 C CNN
+F 3 "https://www.finder-relais.net/de/finder-relais-serie-40.pdf" H 2092 6660 50  0001 C CNN
+	1    2092 6660
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 6336 1892 6336
+Wire Wire Line
+	1892 6336 1892 6360
+Wire Wire Line
+	1400 6824 1400 6988
+Wire Wire Line
+	1400 6988 1892 6988
+Wire Wire Line
+	1892 6960 1892 6988
+Connection ~ 1892 6988
+Wire Wire Line
+	1400 6336 1400 6524
+Wire Wire Line
+	2464 6190 2392 6190
+Wire Wire Line
+	2392 6190 2392 6360
+Text GLabel 2464 6190 2    50   Input ~ 0
+230V_OUT_1
+Text GLabel 2404 7146 2    50   Input ~ 0
+230V_L
+Wire Wire Line
+	2292 6960 2292 7146
+Wire Wire Line
+	2292 7146 2404 7146
+$Comp
+L Device:R_US R12
+U 1 1 618E9BEB
+P 2570 7314
+F 0 "R12" V 2752 7314 50  0000 C CNN
+F 1 "100" V 2670 7310 50  0000 C CNN
+F 2 "" V 2610 7304 50  0001 C CNN
+F 3 "~" H 2570 7314 50  0001 C CNN
+	1    2570 7314
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2720 7314 2944 7314
+Wire Wire Line
+	1892 6988 1892 7114
+Wire Wire Line
+	2192 7314 2420 7314
+Wire Wire Line
+	2944 7514 2816 7514
+Wire Wire Line
+	2816 7514 2816 7574
+Wire Wire Line
+	2816 7574 1892 7574
+$Comp
+L power:+12V #PWR0126
+U 1 1 619222CD
+P 1892 6112
+F 0 "#PWR0126" H 1892 5962 50  0001 C CNN
+F 1 "+12V" H 1907 6285 50  0000 C CNN
+F 2 "" H 1892 6112 50  0001 C CNN
+F 3 "" H 1892 6112 50  0001 C CNN
+	1    1892 6112
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1892 6336 1892 6112
+Connection ~ 1892 6336
+$Comp
+L BBQino-rescue:GNDPWR-power #PWR?
+U 1 1 6192B2E0
+P 766 7368
+AR Path="/613C1456/6192B2E0" Ref="#PWR?"  Part="1" 
+AR Path="/614A5E16/6192B2E0" Ref="#PWR0127"  Part="1" 
+F 0 "#PWR0127" H 766 7168 50  0001 C CNN
+F 1 "GNDPWR" H 770 7214 50  0000 C CNN
+F 2 "" H 766 7318 50  0001 C CNN
+F 3 "" H 766 7318 50  0001 C CNN
+	1    766  7368
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0128
+U 1 1 61936220
+P 1202 7358
+F 0 "#PWR0128" H 1202 7108 50  0001 C CNN
+F 1 "GNDD" H 1206 7203 50  0000 C CNN
+F 2 "" H 1202 7358 50  0001 C CNN
+F 3 "" H 1202 7358 50  0001 C CNN
+	1    1202 7358
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:Jumper_2_Open JP1
+U 1 1 61939801
+P 986 7220
+F 0 "JP1" H 986 7455 50  0000 C CNN
+F 1 "Jumper_2_Open" H 986 7364 50  0000 C CNN
+F 2 "" H 986 7220 50  0001 C CNN
+F 3 "~" H 986 7220 50  0001 C CNN
+	1    986  7220
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1186 7220 1202 7220
+Wire Wire Line
+	1202 7220 1202 7358
+Wire Wire Line
+	786  7220 766  7220
+Wire Wire Line
+	766  7220 766  7368
+$Comp
+L Diode:1N4007 D8
+U 1 1 61955C23
+P 4110 6630
+F 0 "D8" V 4059 6767 50  0000 L CNN
+F 1 "1N4148W-HF" H 3854 6862 50  0001 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 4110 6455 50  0001 C CNN
+F 3 "https://www.mouser.it/datasheet/2/80/QW-J0017_1N4148W-HF_RevA-1846955.pdf" H 4110 6630 50  0001 C CNN
+	1    4110 6630
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J_K22
+U 1 1 61955C29
+P 5854 7370
+F 0 "J_K22" H 5826 7298 50  0000 R CNN
+F 1 "Conn_01x04_Male" H 5826 7343 50  0001 R CNN
+F 2 "" H 5854 7370 50  0001 C CNN
+F 3 "~" H 5854 7370 50  0001 C CNN
+	1    5854 7370
+	-1   0    0    1   
+$EndComp
+$Comp
+L Relay:FINDER-40.41 K4
+U 1 1 61955C2F
+P 4802 6616
+F 0 "K4" H 5232 6662 50  0000 L CNN
+F 1 "FINDER-40.41" H 5232 6571 50  0000 L CNN
+F 2 "Relay_THT:Relay_SPDT_Finder_40.41" H 5942 6576 50  0001 C CNN
+F 3 "https://www.finder-relais.net/de/finder-relais-serie-40.pdf" H 4802 6616 50  0001 C CNN
+	1    4802 6616
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4110 6292 4602 6292
+Wire Wire Line
+	4602 6292 4602 6316
+Wire Wire Line
+	4110 6780 4110 6944
+Wire Wire Line
+	4110 6944 4602 6944
+Wire Wire Line
+	4602 6916 4602 6944
+Connection ~ 4602 6944
+Wire Wire Line
+	4110 6292 4110 6480
+Wire Wire Line
+	5174 6146 5102 6146
+Wire Wire Line
+	5102 6146 5102 6316
+Text GLabel 5174 6146 2    50   Input ~ 0
+230V_OUT_1
+Text GLabel 5114 7102 2    50   Input ~ 0
+230V_L
+Wire Wire Line
+	5002 6916 5002 7102
+Wire Wire Line
+	5002 7102 5114 7102
+$Comp
+L Device:R_US R13
+U 1 1 61955C42
+P 5280 7270
+F 0 "R13" V 5462 7270 50  0000 C CNN
+F 1 "100" V 5380 7266 50  0000 C CNN
+F 2 "" V 5320 7260 50  0001 C CNN
+F 3 "~" H 5280 7270 50  0001 C CNN
+	1    5280 7270
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5430 7270 5654 7270
+Wire Wire Line
+	4602 6944 4602 7070
+Wire Wire Line
+	4902 7270 5130 7270
+Wire Wire Line
+	5654 7470 5526 7470
+Wire Wire Line
+	5526 7470 5526 7530
+Wire Wire Line
+	5526 7530 4602 7530
+Wire Wire Line
+	4602 7530 4602 7470
+$Comp
+L power:+12V #PWR0129
+U 1 1 61955C55
+P 4602 6068
+F 0 "#PWR0129" H 4602 5918 50  0001 C CNN
+F 1 "+12V" H 4617 6241 50  0000 C CNN
+F 2 "" H 4602 6068 50  0001 C CNN
+F 3 "" H 4602 6068 50  0001 C CNN
+	1    4602 6068
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4602 6292 4602 6068
+Connection ~ 4602 6292
+Wire Notes Line
+	4282 5820 6228 5820
+Wire Notes Line
+	6228 5820 6228 7712
+Wire Notes Line
+	6228 7712 606  7712
+Wire Notes Line
+	606  7712 606  5816
+Wire Notes Line
+	606  5816 2742 5816
+Wire Notes Line
+	2742 5816 2742 5810
+Wire Wire Line
+	1892 7574 1892 7514
+$Comp
+L Transistor_FET:2N7002K Q6
+U 1 1 619816C3
+P 1992 7314
+F 0 "Q6" H 2197 7360 50  0000 L CNN
+F 1 "2N7002K" H 2197 7269 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2192 7239 50  0001 L CIN
+F 3 "https://www.diodes.com/assets/Datasheets/ds30896.pdf" H 1992 7314 50  0001 L CNN
+	1    1992 7314
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:2N7002K Q7
+U 1 1 619A122F
+P 4702 7270
+F 0 "Q7" H 4907 7316 50  0000 L CNN
+F 1 "2N7002K" H 4907 7225 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4902 7195 50  0001 L CIN
+F 3 "https://www.diodes.com/assets/Datasheets/ds30896.pdf" H 4702 7270 50  0001 L CNN
+	1    4702 7270
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC
