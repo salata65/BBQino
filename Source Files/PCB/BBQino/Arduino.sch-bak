@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 6
+Sheet 4 7
 Title ""
 Date ""
 Rev ""
@@ -48,11 +48,12 @@ Connection ~ 2900 4400
 Wire Wire Line
 	2900 4400 3000 4400
 $Comp
-L Amplifier_Current:INA181 U?
+L BBQino-rescue:INA181-Amplifier_Current U?
 U 1 1 618CA589
 P 8780 2410
 AR Path="/613C1456/618CA589" Ref="U?"  Part="1" 
 AR Path="/613FC6D4/618CA589" Ref="U3"  Part="1" 
+AR Path="/618CA589" Ref="U3"  Part="1" 
 F 0 "U3" H 9124 2456 50  0000 L CNN
 F 1 "INA181" H 9124 2365 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-6" H 8830 2460 50  0001 C CNN

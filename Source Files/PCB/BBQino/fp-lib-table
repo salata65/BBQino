@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name BBQino)(type KiCad)(uri ${KIPRJMOD}/Library/BBQino.pretty)(options "")(descr ""))
+  (lib (name Kicad-lib)(type KiCad)(uri "C:/Program Files/KiCad/share/kicad/modules")(options "")(descr ""))
 )

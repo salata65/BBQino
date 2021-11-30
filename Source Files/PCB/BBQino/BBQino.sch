@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 7
 Title "BBQino - DRAFT"
 Date "2021-09-08"
 Rev "REV 0"
@@ -46,5 +46,11 @@ S 4194 1049 1730 844
 U 61534AF8
 F0 "Thermocouple" 50
 F1 "Thermocouple.sch" 50
+$EndSheet
+$Sheet
+S 5100 2900 1300 800 
+U 619F806C
+F0 "hbridge" 50
+F1 "hbridge.sch" 50
 $EndSheet
 $EndSCHEMATC

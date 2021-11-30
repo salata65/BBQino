@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 6
+Sheet 3 7
 Title ""
 Date ""
 Rev ""
@@ -16,12 +16,12 @@ $EndDescr
 $Comp
 L BBQino-rescue:Screw_Terminal_01x02-Connector J1
 U 1 1 6143D9E7
-P 1250 1250
-F 0 "J1" H 1168 925 50  0000 C CNN
-F 1 "VIN < 13V" H 1168 1016 50  0000 C CNN
-F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-2_1x02_P2.54mm_Horizontal" H 1250 1250 50  0001 C CNN
-F 3 "~" H 1250 1250 50  0001 C CNN
-	1    1250 1250
+P 800 1250
+F 0 "J1" H 718 925 50  0000 C CNN
+F 1 "VIN < 13V" H 718 1016 50  0000 C CNN
+F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-2_1x02_P2.54mm_Horizontal" H 800 1250 50  0001 C CNN
+F 3 "~" H 800 1250 50  0001 C CNN
+	1    800  1250
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -74,27 +74,9 @@ Wire Wire Line
 Connection ~ 2500 1500
 Wire Wire Line
 	2100 1850 2500 1850
-Wire Wire Line
-	2100 1850 1550 1850
-Wire Wire Line
-	1550 1850 1550 1250
-Wire Wire Line
-	1550 1250 1450 1250
 Connection ~ 2100 1850
 Wire Wire Line
-	1450 1150 1900 1150
-$Comp
-L BBQino-rescue:+12V-power #PWR0106
-U 1 1 6144570A
-P 2500 1150
-F 0 "#PWR0106" H 2500 1000 50  0001 C CNN
-F 1 "+12V" H 2515 1323 50  0000 C CNN
-F 2 "" H 2500 1150 50  0001 C CNN
-F 3 "" H 2500 1150 50  0001 C CNN
-	1    2500 1150
-	1    0    0    -1  
-$EndComp
-Connection ~ 2500 1150
+	1000 1150 1300 1150
 $Comp
 L BBQino-rescue:GNDPWR-power #PWR0107
 U 1 1 61445C4C
@@ -267,430 +249,951 @@ Wire Wire Line
 Wire Wire Line
 	2900 3300 2900 3350
 $Comp
-L BBQino-rescue:VOD205T IC1
-U 1 1 615B3951
-P 5620 1560
-F 0 "IC1" H 6470 1825 50  0000 C CNN
-F 1 "VOD205T" H 6470 1734 50  0000 C CNN
-F 2 "SOIC127P610X323-8N" H 7170 1660 50  0001 L CNN
-F 3 "http://www.vishay.com/docs/81956/vod205t.pdf" H 7170 1560 50  0001 L CNN
-F 4 "Vishay VOD205T DC Input, Transistor Output Dual Optocoupler, SMT SOIC 8" H 7170 1460 50  0001 L CNN "Description"
-F 5 "3.23" H 7170 1360 50  0001 L CNN "Height"
-F 6 "Vishay" H 7170 1260 50  0001 L CNN "Manufacturer_Name"
-F 7 "VOD205T" H 7170 1160 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "78-VOD205T" H 7170 1060 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/VOD205T?qs=OZzrG8p9eNh%2FWG3FDe7e4g%3D%3D" H 7170 960 50  0001 L CNN "Mouser Price/Stock"
-F 10 "VOD205T" H 7170 860 50  0001 L CNN "Arrow Part Number"
-F 11 "https://www.arrow.com/en/products/vod205t/vishay" H 7170 760 50  0001 L CNN "Arrow Price/Stock"
-	1    5620 1560
-	1    0    0    -1  
-$EndComp
-$Comp
-L BBQino-rescue:R_US-Device R4
-U 1 1 61620715
-P 5220 2260
-F 0 "R4" H 5025 2310 50  0000 L CNN
-F 1 "330" H 4970 2215 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 5260 2250 50  0001 C CNN
-F 3 "" H 5220 2260 50  0001 C CNN
-	1    5220 2260
-	1    0    0    -1  
-$EndComp
-$Comp
-L BBQino-rescue:R_US-Device R5
-U 1 1 616211DE
-P 5490 2255
-F 0 "R5" H 5558 2301 50  0000 L CNN
-F 1 "330" H 5558 2210 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 5530 2245 50  0001 C CNN
-F 3 "" H 5490 2255 50  0001 C CNN
-	1    5490 2255
-	1    0    0    -1  
-$EndComp
-Text GLabel 4985 1560 0    50   Input ~ 0
-HBRD_A
-Text GLabel 4990 1760 0    50   Input ~ 0
-HBRD_B
-Wire Wire Line
-	5220 1660 5220 2110
-Wire Wire Line
-	5490 2105 5490 1860
-Wire Wire Line
-	5490 1860 5620 1860
-$Comp
-L power:GNDD #PWR0116
-U 1 1 6162E885
-P 5490 2405
-F 0 "#PWR0116" H 5490 2155 50  0001 C CNN
-F 1 "GNDD" H 5494 2250 50  0000 C CNN
-F 2 "" H 5490 2405 50  0001 C CNN
-F 3 "" H 5490 2405 50  0001 C CNN
-	1    5490 2405
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDD #PWR0117
-U 1 1 616321E5
-P 5220 2410
-F 0 "#PWR0117" H 5220 2160 50  0001 C CNN
-F 1 "GNDD" H 5224 2255 50  0000 C CNN
-F 2 "" H 5220 2410 50  0001 C CNN
-F 3 "" H 5220 2410 50  0001 C CNN
-	1    5220 2410
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4985 1560 5620 1560
-Wire Wire Line
-	4990 1760 5620 1760
-Wire Wire Line
-	5620 1660 5220 1660
-$Comp
-L Device:Q_NMOS_GDS Q3
-U 1 1 6166B6D7
-P 7865 2150
-F 0 "Q3" H 8070 2196 50  0000 L CNN
-F 1 "DMN4040SK3" H 8070 2105 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 8065 2250 50  0001 C CNN
-F 3 "https://www.mouser.it/datasheet/2/115/DIODS13197_1-2541721.pdf" H 7865 2150 50  0001 C CNN
-	1    7865 2150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Q_PMOS_GDS Q2
-U 1 1 616A10C4
-P 7865 1440
-F 0 "Q2" H 8069 1394 50  0000 L CNN
-F 1 "DMP4051LK3" H 8069 1485 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 8065 1540 50  0001 C CNN
-F 3 "https://www.mouser.it/datasheet/2/115/DIOD_S_A0007713693_1-2542942.pdf" H 7865 1440 50  0001 C CNN
-	1    7865 1440
-	1    0    0    1   
-$EndComp
-$Comp
-L Device:Q_PMOS_GDS Q4
-U 1 1 616A49C8
-P 9975 1420
-F 0 "Q4" H 10180 1374 50  0000 L CNN
-F 1 "DMP4051LK3" H 10180 1465 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 10175 1520 50  0001 C CNN
-F 3 "https://www.mouser.it/datasheet/2/115/DIOD_S_A0007713693_1-2542942.pdf" H 9975 1420 50  0001 C CNN
-	1    9975 1420
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	7610 2150 7665 2150
-Wire Wire Line
-	7610 1440 7665 1440
-$Comp
-L BBQino-rescue:R_US-Device R6
-U 1 1 616B7AE4
-P 7610 1290
-F 0 "R6" H 7678 1336 50  0000 L CNN
-F 1 "R_US-Device" H 7678 1245 50  0000 L CNN
-F 2 "" V 7650 1280 50  0001 C CNN
-F 3 "" H 7610 1290 50  0001 C CNN
-	1    7610 1290
-	1    0    0    -1  
-$EndComp
-$Comp
-L BBQino-rescue:GNDPWR-power #PWR0118
-U 1 1 616E35FD
-P 8970 2985
-F 0 "#PWR0118" H 8970 2785 50  0001 C CNN
-F 1 "GNDPWR" H 8974 2831 50  0000 C CNN
-F 2 "" H 8970 2935 50  0001 C CNN
-F 3 "" H 8970 2935 50  0001 C CNN
-	1    8970 2985
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Q_NMOS_GDS Q5
-U 1 1 6167C7D7
-P 9975 2140
-F 0 "Q5" H 10180 2186 50  0000 L CNN
-F 1 "DMN4040SK3" H 10180 2095 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 10175 2240 50  0001 C CNN
-F 3 "https://www.mouser.it/datasheet/2/115/DIODS13197_1-2541721.pdf" H 9975 2140 50  0001 C CNN
-	1    9975 2140
-	-1   0    0    -1  
-$EndComp
-$Comp
-L BBQino-rescue:R_US-Device R11
-U 1 1 61716695
-P 10230 1270
-F 0 "R11" H 10298 1316 50  0000 L CNN
-F 1 "R_US-Device" H 10298 1225 50  0000 L CNN
-F 2 "" V 10270 1260 50  0001 C CNN
-F 3 "" H 10230 1270 50  0001 C CNN
-	1    10230 1270
-	1    0    0    -1  
-$EndComp
-Connection ~ 10230 1420
-Connection ~ 7610 1440
-$Comp
-L BBQino-rescue:GNDPWR-power #PWR0119
-U 1 1 6174A2D0
-P 7130 2000
-F 0 "#PWR0119" H 7130 1800 50  0001 C CNN
-F 1 "GNDPWR" H 7134 1846 50  0000 C CNN
-F 2 "" H 7130 1950 50  0001 C CNN
-F 3 "" H 7130 1950 50  0001 C CNN
-	1    7130 2000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6970 1660 7130 1660
-Wire Wire Line
-	7130 1660 7130 1860
-Wire Wire Line
-	6970 1860 7130 1860
-Connection ~ 7130 1860
-Wire Wire Line
-	7130 1860 7130 2000
-Wire Wire Line
-	7965 1050 7610 1050
-Wire Wire Line
-	7610 1050 7610 1140
-Wire Wire Line
-	6970 1560 7610 1560
-Wire Wire Line
-	7180 1760 7180 610 
-Wire Wire Line
-	6970 1760 7180 1760
-$Comp
-L power:+12V #PWR0120
-U 1 1 61762569
-P 8950 880
-F 0 "#PWR0120" H 8950 730 50  0001 C CNN
-F 1 "+12V" H 8965 1053 50  0000 C CNN
-F 2 "" H 8950 880 50  0001 C CNN
-F 3 "" H 8950 880 50  0001 C CNN
-	1    8950 880 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8950 880  8950 1045
-Connection ~ 8950 1045
-$Comp
-L Device:C C10
-U 1 1 61764CF5
-P 8950 1200
-F 0 "C10" H 9065 1246 50  0000 L CNN
-F 1 "C" H 9065 1155 50  0000 L CNN
-F 2 "" H 8988 1050 50  0001 C CNN
-F 3 "~" H 8950 1200 50  0001 C CNN
-	1    8950 1200
-	1    0    0    -1  
-$EndComp
-$Comp
-L BBQino-rescue:GNDPWR-power #PWR0121
-U 1 1 617684B8
-P 8950 1350
-F 0 "#PWR0121" H 8950 1150 50  0001 C CNN
-F 1 "GNDPWR" H 8954 1196 50  0000 C CNN
-F 2 "" H 8950 1300 50  0001 C CNN
-F 3 "" H 8950 1300 50  0001 C CNN
-	1    8950 1350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Screw_Terminal_01x02 J4
-U 1 1 6176A2FF
-P 9015 1960
-F 0 "J4" V 8887 2040 50  0000 L CNN
-F 1 "Screw_Terminal_01x02" V 8978 2040 50  0000 L CNN
-F 2 "" H 9015 1960 50  0001 C CNN
-F 3 "~" H 9015 1960 50  0001 C CNN
-	1    9015 1960
+L Diode:SD36_SOD323 D9
+U 1 1 619D848C
+P 1300 1500
+F 0 "D9" V 1254 1579 50  0000 L CNN
+F 1 "SD36_SOD323" V 1345 1579 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 1300 1300 50  0001 C CNN
+F 3 "https://www.littelfuse.com/~/media/electronics/datasheets/tvs_diode_arrays/littelfuse_tvs_diode_array_sd_c_datasheet.pdf.pdf" H 1300 1500 50  0001 C CNN
+	1    1300 1500
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	9015 1760 9505 1760
+	1000 1250 1100 1250
 Wire Wire Line
-	8915 1760 8405 1760
+	1100 1250 1100 1850
+Wire Wire Line
+	1100 1850 1300 1850
+Wire Wire Line
+	1300 1350 1300 1150
+Connection ~ 1300 1150
+Wire Wire Line
+	1300 1150 1900 1150
+Wire Wire Line
+	1300 1650 1300 1850
+Connection ~ 1300 1850
+Wire Wire Line
+	1300 1850 2100 1850
 $Comp
-L Device:C C8
-U 1 1 6177354B
-P 8405 1610
-F 0 "C8" H 8520 1656 50  0000 L CNN
-F 1 "C" H 8520 1565 50  0000 L CNN
-F 2 "" H 8443 1460 50  0001 C CNN
-F 3 "~" H 8405 1610 50  0001 C CNN
-	1    8405 1610
+L BBQino-rescue:R_US-Device R16
+U 1 1 619F5C24
+P 3230 5950
+F 0 "R16" H 3298 5996 50  0000 L CNN
+F 1 "10k" H 3298 5905 50  0000 L CNN
+F 2 "" V 3270 5940 50  0001 C CNN
+F 3 "" H 3230 5950 50  0001 C CNN
+F 4 "1%" H 3360 5810 50  0000 C CNN "Value2"
+	1    3230 5950
 	1    0    0    -1  
 $EndComp
+$Comp
+L BBQino-rescue:R_US-Device R14
+U 1 1 619FCE19
+P 2580 5510
+F 0 "R14" V 2470 5440 50  0000 L CNN
+F 1 "2.2k" V 2700 5430 50  0000 L CNN
+F 2 "" V 2620 5500 50  0001 C CNN
+F 3 "" H 2580 5510 50  0001 C CNN
+F 4 "1%" H 2580 5510 50  0001 C CNN "Value2"
+	1    2580 5510
+	0    1    1    0   
+$EndComp
+Text Notes 1480 4950 0    100  ~ 0
+DEAD TIME\n
+Connection ~ 2500 1150
+$Comp
+L BBQino-rescue:+12V-power #PWR0106
+U 1 1 6144570A
+P 2500 1150
+F 0 "#PWR0106" H 2500 1000 50  0001 C CNN
+F 1 "+12V" H 2515 1323 50  0000 C CNN
+F 2 "" H 2500 1150 50  0001 C CNN
+F 3 "" H 2500 1150 50  0001 C CNN
+	1    2500 1150
+	1    0    0    -1  
+$EndComp
+Text GLabel 850  5510 0    50   Input ~ 0
+PWM_A
+$Comp
+L 74xGxx:74LVC2G14 U4
+U 2 1 61AF7AC6
+P 3170 5510
+F 0 "U4" H 3145 5777 50  0000 C CNN
+F 1 "74LVC2G14" H 3145 5686 50  0000 C CNN
+F 2 "" H 3170 5510 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/sn74lvc2g14.pdf" H 3170 5510 50  0001 C CNN
+	2    3170 5510
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:BAS316 D15
+U 1 1 61AFD7BA
+P 2570 5260
+F 0 "D15" H 2570 5477 50  0000 C CNN
+F 1 "BAS316" H 2570 5386 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323" H 2570 5085 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAS16_SER.pdf" H 2570 5260 50  0001 C CNN
+	1    2570 5260
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	850  5510 1180 5510
+Wire Wire Line
+	2420 5510 2420 5260
+Wire Wire Line
+	2430 5510 2420 5510
+Connection ~ 2420 5510
+Wire Wire Line
+	2730 5510 2790 5510
+Wire Wire Line
+	2720 5260 2790 5260
+Wire Wire Line
+	2790 5260 2790 5510
+Connection ~ 2790 5510
+Wire Wire Line
+	2790 5510 2870 5510
+Wire Wire Line
+	2790 5510 2790 5770
+$Comp
+L BBQino-rescue:C-Device C9
+U 1 1 61B007E3
+P 2790 5950
+F 0 "C9" H 2905 5996 50  0000 L CNN
+F 1 "2.2nF" H 2905 5905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 2828 5800 50  0001 C CNN
+F 3 "~" H 2790 5950 50  0001 C CNN
+F 4 "1%" H 2970 5820 50  0000 C CNN "value2"
+	1    2790 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3230 5800 3230 5770
+Wire Wire Line
+	3230 5770 2790 5770
+Connection ~ 2790 5770
+Wire Wire Line
+	2790 5770 2790 5800
+Wire Wire Line
+	3230 6100 3230 6130
+Wire Wire Line
+	3230 6130 2790 6130
+Wire Wire Line
+	2790 6130 2790 6100
+$Comp
+L power:GNDD #PWR0117
+U 1 1 61B23A1B
+P 2790 6130
+F 0 "#PWR0117" H 2790 5880 50  0001 C CNN
+F 1 "GNDD" H 2794 5975 50  0000 C CNN
+F 2 "" H 2790 6130 50  0001 C CNN
+F 3 "" H 2790 6130 50  0001 C CNN
+	1    2790 6130
+	1    0    0    -1  
+$EndComp
+Connection ~ 2790 6130
 $Comp
 L BBQino-rescue:R_US-Device R7
-U 1 1 61774DA7
-P 8405 1310
-F 0 "R7" H 8473 1356 50  0000 L CNN
-F 1 "R_US-Device" H 8473 1265 50  0000 L CNN
-F 2 "" V 8445 1300 50  0001 C CNN
-F 3 "" H 8405 1310 50  0001 C CNN
-	1    8405 1310
+U 1 1 61B2A60E
+P 3190 7290
+F 0 "R7" H 3258 7336 50  0000 L CNN
+F 1 "10k" H 3258 7245 50  0000 L CNN
+F 2 "" V 3230 7280 50  0001 C CNN
+F 3 "" H 3190 7290 50  0001 C CNN
+F 4 "1%" H 3320 7150 50  0000 C CNN "Value2"
+	1    3190 7290
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C11
-U 1 1 61779436
-P 9505 1610
-F 0 "C11" H 9620 1656 50  0000 L CNN
-F 1 "C" H 9620 1565 50  0000 L CNN
-F 2 "" H 9543 1460 50  0001 C CNN
-F 3 "~" H 9505 1610 50  0001 C CNN
-	1    9505 1610
-	1    0    0    -1  
+L BBQino-rescue:R_US-Device R6
+U 1 1 61B2A615
+P 2540 6850
+F 0 "R6" V 2430 6780 50  0000 L CNN
+F 1 "2.2k" V 2660 6770 50  0000 L CNN
+F 2 "" V 2580 6840 50  0001 C CNN
+F 3 "" H 2540 6850 50  0001 C CNN
+F 4 "1%" H 2540 6850 50  0001 C CNN "Value2"
+	1    2540 6850
+	0    1    1    0   
 $EndComp
 $Comp
-L BBQino-rescue:R_US-Device R10
-U 1 1 6177943C
-P 9505 1310
-F 0 "R10" H 9573 1356 50  0000 L CNN
-F 1 "R_US-Device" H 9573 1265 50  0000 L CNN
-F 2 "" V 9545 1300 50  0001 C CNN
-F 3 "" H 9505 1310 50  0001 C CNN
-	1    9505 1310
+L Diode:BAS316 D14
+U 1 1 61B2A621
+P 2530 6600
+F 0 "D14" H 2530 6817 50  0000 C CNN
+F 1 "BAS316" H 2530 6726 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323" H 2530 6425 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAS16_SER.pdf" H 2530 6600 50  0001 C CNN
+	1    2530 6600
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	2380 6850 2380 6600
+Wire Wire Line
+	2390 6850 2380 6850
+Wire Wire Line
+	2690 6850 2750 6850
+Wire Wire Line
+	2680 6600 2750 6600
+Wire Wire Line
+	2750 6600 2750 6850
+Connection ~ 2750 6850
+Wire Wire Line
+	2750 6850 2830 6850
+Wire Wire Line
+	2750 6850 2750 7110
 $Comp
-L BBQino-rescue:R_US-Device R9
-U 1 1 6178652F
-P 8970 2835
-F 0 "R9" H 9038 2926 50  0000 L CNN
-F 1 "20m" H 9038 2835 50  0000 L CNN
-F 2 "" V 9010 2825 50  0001 C CNN
-F 3 "" H 8970 2835 50  0001 C CNN
-F 4 "0.1%" H 9038 2744 50  0000 L CNN "Value2"
-	1    8970 2835
+L BBQino-rescue:C-Device C8
+U 1 1 61B2A632
+P 2750 7290
+F 0 "C8" H 2865 7336 50  0000 L CNN
+F 1 "2.2nF" H 2865 7245 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 2788 7140 50  0001 C CNN
+F 3 "~" H 2750 7290 50  0001 C CNN
+F 4 "1%" H 2930 7160 50  0000 C CNN "value2"
+	1    2750 7290
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	3190 7140 3190 7110
+Wire Wire Line
+	3190 7110 2750 7110
+Connection ~ 2750 7110
+Wire Wire Line
+	2750 7110 2750 7140
+Wire Wire Line
+	3190 7440 3190 7470
+Wire Wire Line
+	3190 7470 2750 7470
+Wire Wire Line
+	2750 7470 2750 7440
 $Comp
-L Device:C C9
-U 1 1 61787B05
-P 8535 2835
-F 0 "C9" H 8650 2881 50  0000 L CNN
-F 1 "100pF" H 8650 2790 50  0000 L CNN
-F 2 "" H 8573 2685 50  0001 C CNN
-F 3 "~" H 8535 2835 50  0001 C CNN
-	1    8535 2835
+L power:GNDD #PWR0118
+U 1 1 61B2A63F
+P 2750 7470
+F 0 "#PWR0118" H 2750 7220 50  0001 C CNN
+F 1 "GNDD" H 2754 7315 50  0000 C CNN
+F 2 "" H 2750 7470 50  0001 C CNN
+F 3 "" H 2750 7470 50  0001 C CNN
+	1    2750 7470
+	1    0    0    -1  
+$EndComp
+Connection ~ 2750 7470
+$Comp
+L 74xGxx:74LVC2G14 U4
+U 1 1 61AFA868
+P 3130 6850
+F 0 "U4" H 3105 7117 50  0000 C CNN
+F 1 "74LVC2G14" H 3105 7026 50  0000 C CNN
+F 2 "" H 3130 6850 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/sn74lvc2g14.pdf" H 3130 6850 50  0001 C CNN
+	1    3130 6850
+	1    0    0    -1  
+$EndComp
+Connection ~ 1180 5510
+Wire Wire Line
+	1180 5510 2420 5510
+Text GLabel 3510 6850 2    50   Input ~ 0
+PWM_L_LS
+Wire Wire Line
+	3380 6850 3510 6850
+Wire Wire Line
+	1180 5510 1180 6750
+Text Notes 3500 6760 0    50   ~ 0
+\PWM_L_HS\n
+Text Notes 9540 800  0    100  ~ 0
+BOOTSTRAP\n
+$Comp
+L Transistor_BJT:BC846 Q2
+U 1 1 61B7AEE5
+P 6440 2500
+F 0 "Q2" H 6631 2546 50  0000 L CNN
+F 1 "BC846" H 6631 2455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6640 2425 50  0001 L CIN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BC846_SER.pdf" H 6440 2500 50  0001 L CNN
+	1    6440 2500
 	1    0    0    -1  
 $EndComp
 $Comp
 L BBQino-rescue:R_US-Device R8
-U 1 1 6178A6CB
-P 8685 2685
-F 0 "R8" V 8480 2685 50  0000 C CNN
-F 1 "1K" V 8571 2685 50  0000 C CNN
-F 2 "" V 8725 2675 50  0001 C CNN
-F 3 "" H 8685 2685 50  0001 C CNN
-	1    8685 2685
+U 1 1 61B7AEEC
+P 6020 2500
+F 0 "R8" V 5910 2430 50  0000 L CNN
+F 1 "4.7k" V 6140 2420 50  0000 L CNN
+F 2 "" V 6060 2490 50  0001 C CNN
+F 3 "" H 6020 2500 50  0001 C CNN
+F 4 "" H 6020 2500 50  0001 C CNN "Value2"
+	1    6020 2500
 	0    1    1    0   
 $EndComp
-Text GLabel 8115 2685 0    50   Input ~ 0
-I_MOTOR
-Wire Wire Line
-	8835 2685 8970 2685
-Wire Wire Line
-	8975 2685 8970 2685
-Connection ~ 8970 2685
-Wire Wire Line
-	8530 2985 8535 2985
-Connection ~ 8970 2985
-Connection ~ 8535 2985
-Wire Wire Line
-	8535 2985 8970 2985
-Wire Wire Line
-	8535 2685 8115 2685
-Connection ~ 8535 2685
-Wire Wire Line
-	8970 2435 8970 2685
-Connection ~ 8970 2435
-Wire Wire Line
-	7610 1440 7610 1560
-Connection ~ 7610 1560
-Wire Wire Line
-	7610 1560 7610 2150
-Wire Wire Line
-	7965 1240 7965 1050
-Wire Wire Line
-	7965 1045 8405 1045
-Connection ~ 7965 1050
-Wire Wire Line
-	7965 1050 7965 1045
-Wire Wire Line
-	7965 1950 7965 1760
-Wire Wire Line
-	7965 2435 7965 2350
-Wire Wire Line
-	9875 2340 9875 2435
-Wire Wire Line
-	9875 1620 9875 1760
-Wire Wire Line
-	10175 1420 10230 1420
-Wire Wire Line
-	10230 1420 10230 1540
-Wire Wire Line
-	10230 1540 10725 1540
-Wire Wire Line
-	10725 1540 10725 610 
-Connection ~ 10230 1540
-Wire Wire Line
-	10230 1045 10230 1120
-Wire Wire Line
-	9875 1220 9875 1045
-Connection ~ 9875 1045
-Wire Wire Line
-	9875 1045 10230 1045
-Wire Wire Line
-	8950 1045 9505 1045
-Wire Wire Line
-	7965 2435 8970 2435
-Wire Wire Line
-	8970 2435 9875 2435
-Wire Wire Line
-	9505 1160 9505 1045
-Connection ~ 9505 1045
-Wire Wire Line
-	9505 1045 9875 1045
-Wire Wire Line
-	8405 1160 8405 1045
-Connection ~ 8405 1045
-Wire Wire Line
-	8405 1045 8950 1045
-Wire Wire Line
-	9505 1760 9875 1760
-Connection ~ 9505 1760
-Connection ~ 9875 1760
-Wire Wire Line
-	9875 1760 9875 1940
-Wire Wire Line
-	8405 1760 7965 1760
-Connection ~ 8405 1760
-Connection ~ 7965 1760
-Wire Wire Line
-	7965 1760 7965 1640
-Wire Wire Line
-	10175 2140 10230 2140
-Wire Wire Line
-	10230 1540 10230 2140
-Wire Wire Line
-	7180 610  10725 610 
 $Comp
-L Analog_ADC:INA219AxD U2
-U 1 1 61894D2D
-P 10320 5800
-F 0 "U2" H 10320 6381 50  0000 C CNN
-F 1 "INA219AxD" H 10320 6290 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 11120 5450 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/ina219.pdf" H 10670 5700 50  0001 C CNN
-	1    10320 5800
+L BBQino-rescue:R_US-Device R10
+U 1 1 61B7AEF3
+P 6210 2750
+F 0 "R10" H 6310 2750 50  0000 L CNN
+F 1 "1k" H 6310 2670 50  0000 L CNN
+F 2 "" V 6250 2740 50  0001 C CNN
+F 3 "" H 6210 2750 50  0001 C CNN
+F 4 "" H 6210 2750 50  0001 C CNN "Value2"
+	1    6210 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0119
+U 1 1 61B7AEF9
+P 6540 2900
+F 0 "#PWR0119" H 6540 2650 50  0001 C CNN
+F 1 "GNDD" H 6544 2745 50  0000 C CNN
+F 2 "" H 6540 2900 50  0001 C CNN
+F 3 "" H 6540 2900 50  0001 C CNN
+	1    6540 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6170 2500 6210 2500
+Wire Wire Line
+	6210 2500 6210 2600
+Connection ~ 6210 2500
+Wire Wire Line
+	6210 2500 6240 2500
+Wire Wire Line
+	6210 2900 6540 2900
+Wire Wire Line
+	6540 2900 6540 2700
+Connection ~ 6540 2900
+$Comp
+L BBQino-rescue:+12V-power #PWR0120
+U 1 1 61B87AA0
+P 4840 970
+F 0 "#PWR0120" H 4840 820 50  0001 C CNN
+F 1 "+12V" H 4855 1143 50  0000 C CNN
+F 2 "" H 4840 970 50  0001 C CNN
+F 3 "" H 4840 970 50  0001 C CNN
+	1    4840 970 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:B140-E3 D16
+U 1 1 61B8BAE8
+P 5800 1010
+F 0 "D16" H 5800 793 50  0000 C CNN
+F 1 "B140-E3" H 5800 884 50  0000 C CNN
+F 2 "Diode_SMD:D_SMA" H 5800 835 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88946/b120.pdf" H 5800 1010 50  0001 C CNN
+	1    5800 1010
+	-1   0    0    1   
+$EndComp
+$Comp
+L BBQino-rescue:C-Device C10
+U 1 1 61B9BF36
+P 6050 1260
+F 0 "C10" H 6165 1306 50  0000 L CNN
+F 1 "1uF" H 6165 1215 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 6088 1110 50  0001 C CNN
+F 3 "~" H 6050 1260 50  0001 C CNN
+	1    6050 1260
+	1    0    0    -1  
+$EndComp
+$Comp
+L BBQino-rescue:C-Device C12
+U 1 1 61B9E1E6
+P 6470 1260
+F 0 "C12" H 6585 1306 50  0000 L CNN
+F 1 "1uF" H 6585 1215 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 6508 1110 50  0001 C CNN
+F 3 "~" H 6470 1260 50  0001 C CNN
+	1    6470 1260
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 1110 6050 1070
+Wire Wire Line
+	6050 1010 5950 1010
+Wire Wire Line
+	6050 1070 6470 1070
+Wire Wire Line
+	6470 1070 6470 1110
+Connection ~ 6050 1070
+Wire Wire Line
+	6050 1070 6050 1010
+Wire Wire Line
+	6470 1410 6470 1470
+Wire Wire Line
+	6470 1470 6050 1470
+Wire Wire Line
+	6050 1470 6050 1410
+Wire Wire Line
+	4840 970  4840 1010
+$Comp
+L Transistor_BJT:BC846 Q4
+U 1 1 61BB42BC
+P 7330 1110
+F 0 "Q4" H 7521 1156 50  0000 L CNN
+F 1 "BC846" H 7521 1065 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7530 1035 50  0001 L CIN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BC846_SER.pdf" H 7330 1110 50  0001 L CNN
+	1    7330 1110
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6050 1010 6950 1010
+Connection ~ 6050 1010
+$Comp
+L BBQino-rescue:R_US-Device R15
+U 1 1 61BBEEF8
+P 6950 1260
+F 0 "R15" H 7018 1306 50  0000 L CNN
+F 1 "10k" H 7018 1215 50  0000 L CNN
+F 2 "" V 6990 1250 50  0001 C CNN
+F 3 "" H 6950 1260 50  0001 C CNN
+F 4 "1%" H 7080 1120 50  0000 C CNN "Value2"
+	1    6950 1260
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 1110 6950 1010
+Connection ~ 6950 1010
+Wire Wire Line
+	6950 1010 7130 1010
+Wire Wire Line
+	6950 1410 6950 1460
+Wire Wire Line
+	6950 1460 7330 1460
+Wire Wire Line
+	7330 1460 7330 1310
+$Comp
+L Diode:BZM55Bxx D18
+U 1 1 61BC62BA
+P 7330 1660
+F 0 "D18" V 7284 1740 50  0000 L CNN
+F 1 "BZM55Bxx" V 7375 1740 50  0000 L CNN
+F 2 "Diode_SMD:D_MicroMELF" H 7330 1485 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85597/bzm55.pdf" H 7330 1660 50  0001 C CNN
+	1    7330 1660
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7330 1510 7330 1460
+Connection ~ 7330 1460
+$Comp
+L BBQino-rescue:C-Device C20
+U 1 1 61BC9B16
+P 7850 1360
+F 0 "C20" H 7965 1406 50  0000 L CNN
+F 1 "1uF" H 7965 1315 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 7888 1210 50  0001 C CNN
+F 3 "~" H 7850 1360 50  0001 C CNN
+	1    7850 1360
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 1010 7850 1210
+Wire Wire Line
+	7530 1010 7850 1010
+Wire Wire Line
+	7330 1810 7330 1910
+Wire Wire Line
+	7330 1910 7850 1910
+Wire Wire Line
+	7850 1910 7850 1510
+$Comp
+L Transistor_BJT:BC846BPN Q12
+U 1 1 61BD28FA
+P 8530 1670
+F 0 "Q12" H 8721 1716 50  0000 L CNN
+F 1 "BC846BPN" H 8721 1625 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 8730 1770 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BC846BPN.pdf" H 8530 1670 50  0001 C CNN
+	1    8530 1670
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC846BPN Q12
+U 2 1 61BD5425
+P 8530 2180
+F 0 "Q12" H 8721 2226 50  0000 L CNN
+F 1 "BC846BPN" H 8721 2135 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 8730 2280 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BC846BPN.pdf" H 8530 2180 50  0001 C CNN
+	2    8530 2180
+	1    0    0    -1  
+$EndComp
+$Comp
+L BBQino-rescue:R_US-Device R32
+U 1 1 61BDB63F
+P 8250 1270
+F 0 "R32" H 8318 1316 50  0000 L CNN
+F 1 "10k" H 8318 1225 50  0000 L CNN
+F 2 "" V 8290 1260 50  0001 C CNN
+F 3 "" H 8250 1270 50  0001 C CNN
+F 4 "" H 8380 1130 50  0000 C CNN "Value2"
+	1    8250 1270
+	1    0    0    -1  
+$EndComp
+$Comp
+L BBQino-rescue:R_US-Device R30
+U 1 1 61BE0EBC
+P 8030 2180
+F 0 "R30" V 8180 2130 50  0000 L CNN
+F 1 "1k" V 8110 2140 50  0000 L CNN
+F 2 "" V 8070 2170 50  0001 C CNN
+F 3 "" H 8030 2180 50  0001 C CNN
+F 4 "" H 8160 2040 50  0000 C CNN "Value2"
+	1    8030 2180
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7850 1010 8250 1010
+Wire Wire Line
+	8250 1010 8250 1120
+Connection ~ 7850 1010
+Wire Wire Line
+	8250 1420 8250 1950
+Wire Wire Line
+	8250 1950 8330 1950
+Wire Wire Line
+	8330 1950 8330 1670
+Wire Wire Line
+	8330 1950 8330 2180
+Connection ~ 8330 1950
+Wire Wire Line
+	8630 1980 8630 1930
+Wire Wire Line
+	8630 1470 8630 1010
+Wire Wire Line
+	8630 1010 8250 1010
+Connection ~ 8250 1010
+Wire Wire Line
+	8250 2180 8250 1950
+Connection ~ 8250 1950
+Wire Wire Line
+	8180 2180 8250 2180
+Wire Wire Line
+	7330 1910 7330 2500
+Wire Wire Line
+	7330 2500 8630 2500
+Wire Wire Line
+	8630 2500 8630 2380
+Connection ~ 7330 1910
+Wire Wire Line
+	3420 5510 3520 5510
+Text GLabel 3520 5510 2    50   Input ~ 0
+PWM_L_HS
+Text GLabel 5840 2500 0    50   Input ~ 0
+PWM_L_HS
+Wire Wire Line
+	5840 2500 5870 2500
+Wire Wire Line
+	7880 2180 6540 2180
+Wire Wire Line
+	6540 2180 6540 2300
+Wire Wire Line
+	4840 1010 5650 1010
+Text GLabel 9010 1930 2    50   Input ~ 0
+HS_G_L
+Connection ~ 8630 1930
+Wire Wire Line
+	8630 1930 8630 1870
+Wire Wire Line
+	8630 1930 9010 1930
+$Comp
+L Transistor_BJT:BC846 Q3
+U 1 1 61CA463F
+P 6470 4640
+F 0 "Q3" H 6661 4686 50  0000 L CNN
+F 1 "BC846" H 6661 4595 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6670 4565 50  0001 L CIN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BC846_SER.pdf" H 6470 4640 50  0001 L CNN
+	1    6470 4640
+	1    0    0    -1  
+$EndComp
+$Comp
+L BBQino-rescue:R_US-Device R9
+U 1 1 61CA4B3A
+P 6050 4640
+F 0 "R9" V 5940 4570 50  0000 L CNN
+F 1 "4.7k" V 6170 4560 50  0000 L CNN
+F 2 "" V 6090 4630 50  0001 C CNN
+F 3 "" H 6050 4640 50  0001 C CNN
+F 4 "" H 6050 4640 50  0001 C CNN "Value2"
+	1    6050 4640
+	0    1    1    0   
+$EndComp
+$Comp
+L BBQino-rescue:R_US-Device R11
+U 1 1 61CA4B45
+P 6240 4890
+F 0 "R11" H 6340 4890 50  0000 L CNN
+F 1 "1k" H 6340 4810 50  0000 L CNN
+F 2 "" V 6280 4880 50  0001 C CNN
+F 3 "" H 6240 4890 50  0001 C CNN
+F 4 "" H 6240 4890 50  0001 C CNN "Value2"
+	1    6240 4890
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0121
+U 1 1 61CA4B4F
+P 6570 5040
+F 0 "#PWR0121" H 6570 4790 50  0001 C CNN
+F 1 "GNDD" H 6574 4885 50  0000 C CNN
+F 2 "" H 6570 5040 50  0001 C CNN
+F 3 "" H 6570 5040 50  0001 C CNN
+	1    6570 5040
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 4640 6240 4640
+Wire Wire Line
+	6240 4640 6240 4740
+Connection ~ 6240 4640
+Wire Wire Line
+	6240 4640 6270 4640
+Wire Wire Line
+	6240 5040 6570 5040
+Wire Wire Line
+	6570 5040 6570 4840
+Connection ~ 6570 5040
+$Comp
+L BBQino-rescue:+12V-power #PWR0130
+U 1 1 61CA4B60
+P 4870 3110
+F 0 "#PWR0130" H 4870 2960 50  0001 C CNN
+F 1 "+12V" H 4885 3283 50  0000 C CNN
+F 2 "" H 4870 3110 50  0001 C CNN
+F 3 "" H 4870 3110 50  0001 C CNN
+	1    4870 3110
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:B140-E3 D17
+U 1 1 61CA4B6A
+P 5830 3150
+F 0 "D17" H 5830 2933 50  0000 C CNN
+F 1 "B140-E3" H 5830 3024 50  0000 C CNN
+F 2 "Diode_SMD:D_SMA" H 5830 2975 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88946/b120.pdf" H 5830 3150 50  0001 C CNN
+	1    5830 3150
+	-1   0    0    1   
+$EndComp
+$Comp
+L BBQino-rescue:C-Device C11
+U 1 1 61CA4B74
+P 6080 3400
+F 0 "C11" H 6195 3446 50  0000 L CNN
+F 1 "1uF" H 6195 3355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 6118 3250 50  0001 C CNN
+F 3 "~" H 6080 3400 50  0001 C CNN
+	1    6080 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L BBQino-rescue:C-Device C19
+U 1 1 61CA4B7E
+P 6500 3400
+F 0 "C19" H 6615 3446 50  0000 L CNN
+F 1 "1uF" H 6615 3355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 6538 3250 50  0001 C CNN
+F 3 "~" H 6500 3400 50  0001 C CNN
+	1    6500 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6080 3250 6080 3210
+Wire Wire Line
+	6080 3150 5980 3150
+Wire Wire Line
+	6080 3210 6500 3210
+Wire Wire Line
+	6500 3210 6500 3250
+Connection ~ 6080 3210
+Wire Wire Line
+	6080 3210 6080 3150
+Wire Wire Line
+	6500 3550 6500 3610
+Wire Wire Line
+	6500 3610 6080 3610
+Wire Wire Line
+	6080 3610 6080 3550
+Wire Wire Line
+	4870 3110 4870 3150
+$Comp
+L Transistor_BJT:BC846 Q5
+U 1 1 61CA4B92
+P 7360 3250
+F 0 "Q5" H 7551 3296 50  0000 L CNN
+F 1 "BC846" H 7551 3205 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7560 3175 50  0001 L CIN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BC846_SER.pdf" H 7360 3250 50  0001 L CNN
+	1    7360 3250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6080 3150 6980 3150
+Connection ~ 6080 3150
+$Comp
+L BBQino-rescue:R_US-Device R17
+U 1 1 61CA4B9F
+P 6980 3400
+F 0 "R17" H 7048 3446 50  0000 L CNN
+F 1 "10k" H 7048 3355 50  0000 L CNN
+F 2 "" V 7020 3390 50  0001 C CNN
+F 3 "" H 6980 3400 50  0001 C CNN
+F 4 "1%" H 7110 3260 50  0000 C CNN "Value2"
+	1    6980 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6980 3250 6980 3150
+Connection ~ 6980 3150
+Wire Wire Line
+	6980 3150 7160 3150
+Wire Wire Line
+	6980 3550 6980 3600
+Wire Wire Line
+	6980 3600 7360 3600
+Wire Wire Line
+	7360 3600 7360 3450
+$Comp
+L Diode:BZM55Bxx D19
+U 1 1 61CA4BAF
+P 7360 3800
+F 0 "D19" V 7314 3880 50  0000 L CNN
+F 1 "BZM55Bxx" V 7405 3880 50  0000 L CNN
+F 2 "Diode_SMD:D_MicroMELF" H 7360 3625 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85597/bzm55.pdf" H 7360 3800 50  0001 C CNN
+	1    7360 3800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7360 3650 7360 3600
+Connection ~ 7360 3600
+$Comp
+L BBQino-rescue:C-Device C21
+U 1 1 61CA4BBB
+P 7880 3500
+F 0 "C21" H 7995 3546 50  0000 L CNN
+F 1 "1uF" H 7995 3455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 7918 3350 50  0001 C CNN
+F 3 "~" H 7880 3500 50  0001 C CNN
+	1    7880 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7880 3150 7880 3350
+Wire Wire Line
+	7560 3150 7880 3150
+Wire Wire Line
+	7360 3950 7360 4050
+Wire Wire Line
+	7360 4050 7880 4050
+Wire Wire Line
+	7880 4050 7880 3650
+$Comp
+L Transistor_BJT:BC846BPN Q13
+U 1 1 61CA4CA0
+P 8560 3810
+F 0 "Q13" H 8751 3856 50  0000 L CNN
+F 1 "BC846BPN" H 8751 3765 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 8760 3910 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BC846BPN.pdf" H 8560 3810 50  0001 C CNN
+	1    8560 3810
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC846BPN Q13
+U 2 1 61CA4CAA
+P 8560 4320
+F 0 "Q13" H 8751 4366 50  0000 L CNN
+F 1 "BC846BPN" H 8751 4275 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 8760 4420 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BC846BPN.pdf" H 8560 4320 50  0001 C CNN
+	2    8560 4320
+	1    0    0    -1  
+$EndComp
+$Comp
+L BBQino-rescue:R_US-Device R33
+U 1 1 61CA4CB5
+P 8280 3410
+F 0 "R33" H 8348 3456 50  0000 L CNN
+F 1 "10k" H 8348 3365 50  0000 L CNN
+F 2 "" V 8320 3400 50  0001 C CNN
+F 3 "" H 8280 3410 50  0001 C CNN
+F 4 "" H 8410 3270 50  0000 C CNN "Value2"
+	1    8280 3410
+	1    0    0    -1  
+$EndComp
+$Comp
+L BBQino-rescue:R_US-Device R31
+U 1 1 61CA4CC0
+P 8060 4320
+F 0 "R31" V 8210 4270 50  0000 L CNN
+F 1 "1k" V 8140 4280 50  0000 L CNN
+F 2 "" V 8100 4310 50  0001 C CNN
+F 3 "" H 8060 4320 50  0001 C CNN
+F 4 "" H 8190 4180 50  0000 C CNN "Value2"
+	1    8060 4320
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7880 3150 8280 3150
+Wire Wire Line
+	8280 3150 8280 3260
+Connection ~ 7880 3150
+Wire Wire Line
+	8280 3560 8280 4090
+Wire Wire Line
+	8280 4090 8360 4090
+Wire Wire Line
+	8360 4090 8360 3810
+Wire Wire Line
+	8360 4090 8360 4320
+Connection ~ 8360 4090
+Wire Wire Line
+	8660 4120 8660 4070
+Wire Wire Line
+	8660 3610 8660 3150
+Wire Wire Line
+	8660 3150 8280 3150
+Connection ~ 8280 3150
+Wire Wire Line
+	8280 4320 8280 4090
+Connection ~ 8280 4090
+Wire Wire Line
+	8210 4320 8280 4320
+Wire Wire Line
+	7360 4050 7360 4640
+Wire Wire Line
+	7360 4640 8660 4640
+Wire Wire Line
+	8660 4640 8660 4520
+Connection ~ 7360 4050
+Text GLabel 5870 4640 0    50   Input ~ 0
+PWM_R_HS
+Wire Wire Line
+	5870 4640 5900 4640
+Wire Wire Line
+	7910 4320 6570 4320
+Wire Wire Line
+	6570 4320 6570 4440
+Wire Wire Line
+	4870 3150 5680 3150
+Text GLabel 9040 4070 2    50   Input ~ 0
+HS_G_R
+Connection ~ 8660 4070
+Wire Wire Line
+	8660 4070 8660 4010
+Wire Wire Line
+	8660 4070 9040 4070
+Text GLabel 8900 2500 2    50   Input ~ 0
+float_1
+Wire Wire Line
+	8630 2500 8900 2500
+Connection ~ 8630 2500
+Text GLabel 8930 4640 2    50   Input ~ 0
+float_2
+Wire Wire Line
+	8660 4640 8930 4640
+Connection ~ 8660 4640
+$Comp
+L Amplifier_Operational:LM358 U2
+U 1 1 61CEA909
+P 1920 6850
+F 0 "U2" H 1920 6483 50  0000 C CNN
+F 1 "LM358" H 1920 6574 50  0000 C CNN
+F 2 "" H 1920 6850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 1920 6850 50  0001 C CNN
+	1    1920 6850
+	1    0    0    1   
+$EndComp
+$Comp
+L BBQino-rescue:R_US-Device R4
+U 1 1 61D08D47
+P 1400 6750
+F 0 "R4" V 1670 6710 50  0000 L CNN
+F 1 "10k" V 1580 6680 50  0000 L CNN
+F 2 "" V 1440 6740 50  0001 C CNN
+F 3 "" H 1400 6750 50  0001 C CNN
+F 4 "1%" V 1500 6730 50  0000 C CNN "Value2"
+	1    1400 6750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L BBQino-rescue:R_US-Device R5
+U 1 1 61D2B0C2
+P 1840 6390
+F 0 "R5" V 2110 6350 50  0000 L CNN
+F 1 "10k" V 2020 6320 50  0000 L CNN
+F 2 "" V 1880 6380 50  0001 C CNN
+F 3 "" H 1840 6390 50  0001 C CNN
+F 4 "1%" V 1940 6370 50  0000 C CNN "Value2"
+	1    1840 6390
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1620 6750 1590 6750
+Wire Wire Line
+	1590 6750 1590 6390
+Wire Wire Line
+	1590 6390 1690 6390
+Connection ~ 1590 6750
+Wire Wire Line
+	1590 6750 1550 6750
+Wire Wire Line
+	1990 6390 2260 6390
+Wire Wire Line
+	2260 6390 2260 6850
+Wire Wire Line
+	2260 6850 2220 6850
+Wire Wire Line
+	1250 6750 1180 6750
+Wire Wire Line
+	2380 6850 2260 6850
+Connection ~ 2380 6850
+Connection ~ 2260 6850
+$Comp
+L power:GNDD #PWR0131
+U 1 1 61D65F42
+P 1500 7100
+F 0 "#PWR0131" H 1500 6850 50  0001 C CNN
+F 1 "GNDD" H 1504 6945 50  0000 C CNN
+F 2 "" H 1500 7100 50  0001 C CNN
+F 3 "" H 1500 7100 50  0001 C CNN
+	1    1500 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 7100 1500 6950
+Wire Wire Line
+	1500 6950 1620 6950
+$Comp
+L Amplifier_Operational:LM358 U2
+U 2 1 61D7332E
+P 4670 7420
+F 0 "U2" H 4670 7787 50  0000 C CNN
+F 1 "LM358" H 4670 7696 50  0000 C CNN
+F 2 "" H 4670 7420 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 4670 7420 50  0001 C CNN
+	2    4670 7420
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LM358 U2
+U 3 1 61D74DA2
+P 5440 7360
+F 0 "U2" H 5398 7406 50  0000 L CNN
+F 1 "LM358" H 5398 7315 50  0000 L CNN
+F 2 "" H 5440 7360 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 5440 7360 50  0001 C CNN
+	3    5440 7360
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
-	6980 5105 8855 5105
-Text Notes 9295 5145 0    100  ~ 0
-I2C current sensing\n
+	4270 7700 4270 6540
 Wire Notes Line
-	6980 5105 6980 6500
+	4270 6540 6890 6540
+Wire Notes Line
+	6890 6540 6890 6550
+Text Notes 4340 6770 0    100  ~ 20
+UNUSED PARTS
 $EndSCHEMATC

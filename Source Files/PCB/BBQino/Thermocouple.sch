@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 6
+Sheet 6 7
 Title ""
 Date ""
 Rev ""
@@ -52,7 +52,7 @@ F 11 "https://www.arrow.com/en/products/dg4052een-t1-ge4/vishay" H 3095 3150 50 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Thermocouple TC1
+L BBQino-rescue:Thermocouple-Device TC1
 U 1 1 615AEE20
 P 1405 3505
 F 0 "TC1" H 1378 3830 50  0000 C CNN
@@ -63,7 +63,7 @@ F 3 "~" H 830 3555 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Thermocouple TC2
+L BBQino-rescue:Thermocouple-Device TC2
 U 1 1 615AF447
 P 1435 4245
 F 0 "TC2" H 1408 4570 50  0000 C CNN
@@ -74,7 +74,7 @@ F 3 "~" H 860 4295 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Thermocouple TC3
+L BBQino-rescue:Thermocouple-Device TC3
 U 1 1 615AF6AE
 P 1435 5095
 F 0 "TC3" H 1408 5420 50  0000 C CNN
@@ -93,7 +93,7 @@ Wire Wire Line
 Wire Wire Line
 	2695 3195 2695 3250
 $Comp
-L power:+5VA #PWR0122
+L BBQino-rescue:+5VA-power #PWR0122
 U 1 1 615BEA1C
 P 2795 3140
 F 0 "#PWR0122" H 2795 2990 50  0001 C CNN
@@ -106,7 +106,7 @@ $EndComp
 Wire Wire Line
 	2795 3250 2795 3140
 $Comp
-L power:GNDA #PWR0123
+L BBQino-rescue:GNDA-power #PWR0123
 U 1 1 615C0417
 P 2595 4880
 F 0 "#PWR0123" H 2595 4630 50  0001 C CNN
@@ -191,7 +191,7 @@ Wire Wire Line
 Wire Wire Line
 	3280 3750 3245 3750
 $Comp
-L power:+5VA #PWR0124
+L BBQino-rescue:+5VA-power #PWR0124
 U 1 1 615DC0DB
 P 3970 3875
 F 0 "#PWR0124" H 3970 3725 50  0001 C CNN
@@ -202,7 +202,7 @@ F 3 "" H 3970 3875 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GNDA #PWR0125
+L BBQino-rescue:GNDA-power #PWR0125
 U 1 1 615DC6B6
 P 3970 3575
 F 0 "#PWR0125" H 3970 3325 50  0001 C CNN

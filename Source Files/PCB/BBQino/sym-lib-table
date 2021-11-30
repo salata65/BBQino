@@ -1,4 +1,5 @@
 (sym_lib_table
   (lib (name BBQino-rescue)(type Legacy)(uri ${KIPRJMOD}/BBQino-rescue.lib)(options "")(descr ""))
   (lib (name ECWFE2J105K)(type Legacy)(uri ${KIPRJMOD}/Library/ECWFE2J105K.lib)(options "")(descr ""))
+  (lib (name Diode)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/Diode.lib)(options "")(descr ""))
 )
